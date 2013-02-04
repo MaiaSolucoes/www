@@ -4,7 +4,7 @@
     <title></title>
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
     {{ Asset::container('bootstrapper')->styles(); }}
-	{{ Asset::styles(); }}
+    {{ Asset::styles(); }}
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 	</div>
 
 	@include('layouts_maiasolucoes/footer')
-
+    {{ Asset::container('bootstrapper')->scripts(); }}
 </body>
 
 </html>

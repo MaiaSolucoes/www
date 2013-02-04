@@ -34,7 +34,8 @@
 
 Route::get('/', function()
 {
-	return View::make('home.index');
+    Asset::add('style', 'css/style.css');
+    return View::make('layouts_maiasolucoes.default');
 });
 
 /*

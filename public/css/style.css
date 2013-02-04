@@ -135,3 +135,17 @@ a{
     float: left;
     padding-right: 60px;
 }
+
+/* Footer */
+.copyright{
+    position:absolute;
+    left: 50%;
+    margin-left: -126px;
+    margin-top: 10px;
+}
+
+.terms{
+    position:absolute;
+    left:75%;
+    margin-top: 10px;
+}
