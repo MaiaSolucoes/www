@@ -34,7 +34,9 @@
 
 Route::get('/', function()
 {
-	return View::make('layouts/default');
+
+    Asset::add('style', 'css/style.css');
+    return View::make('layouts/default');
 });
 
 /*
