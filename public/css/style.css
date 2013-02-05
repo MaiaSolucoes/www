@@ -137,6 +137,22 @@ a{
 }
 
 /* Footer */
+.social{
+    position:absolute;
+    left: 15%;
+    margin-top: 10px;
+}
+
+.social ul{
+    float: left;
+    list-style-type: none;
+    margin: 0px;;
+}
+
+.social ul li{
+    display: inline;
+}
+
 .copyright{
     position:absolute;
     left: 50%;
