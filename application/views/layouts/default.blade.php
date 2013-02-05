@@ -10,7 +10,7 @@
 <body>
 	
 	@include('layouts/header')
-
+    <br><br><br><br>
 	<div id="content">
 
 		@yield('banner')
