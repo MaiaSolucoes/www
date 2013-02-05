@@ -135,3 +135,37 @@ a{
     float: left;
     padding-right: 60px;
 }
+
+/* Footer */
+.social{
+    position:absolute;
+    left: 15%;
+    margin-top: 10px;
+}
+
+.social ul{
+    float: left;
+    list-style-type: none;
+    margin: 0px;;
+}
+
+.social ul li{
+    display: inline;
+    font-family: 'Crete Round';
+    color: rgb(53, 102, 130);
+}
+
+.copyright{
+    position:absolute;
+    left: 50%;
+    margin-left: -126px;
+    margin-top: 10px;
+    font-family: 'Crete Round';
+    color: rgb(53, 102, 130);
+}
+
+.terms{
+    position:absolute;
+    left:75%;
+    margin-top: 10px;
+}
