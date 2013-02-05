@@ -151,6 +151,8 @@ a{
 
 .social ul li{
     display: inline;
+    font-family: 'Crete Round';
+    color: rgb(53, 102, 130);
 }
 
 .copyright{
@@ -158,6 +160,8 @@ a{
     left: 50%;
     margin-left: -126px;
     margin-top: 10px;
+    font-family: 'Crete Round';
+    color: rgb(53, 102, 130);
 }
 
 .terms{
