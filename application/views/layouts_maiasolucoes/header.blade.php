@@ -7,10 +7,10 @@
         <div id="menu">
 
             <ul>
-                <li><a href="contato">Contato</a></li>
-                <li><a href="solucoes">Soluções</a></li>
-                <li><a href="sobrenos">Sobre Nós</a></li>
-                <li><a href="principal">Principal</a></li>
+                <li><a href="contact">Contato</a></li>
+                <li><a href="solutions">Soluções</a></li>
+                <li><a href="aboutus">Sobre Nós</a></li>
+                <li><a href="main">Principal</a></li>
             </ul>
 
         </div>
