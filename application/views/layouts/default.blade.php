@@ -21,6 +21,7 @@
 	</div>
 
 	<!--@include('layouts/footer')-->
+    
     {{ Asset::container('bootstrapper')->scripts(); }}
 
 </body>
