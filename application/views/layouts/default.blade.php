@@ -1,15 +1,17 @@
-<!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+
+    <meta charset="utf-8">
+    <title>title</title>
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
     {{ Asset::container('bootstrapper')->styles(); }}
-	{{ Asset::styles(); }}
+    {{ Asset::styles(); }}
+
 </head>
 
 <body>
-	
-	@include('layouts_maiasolucoes/header')
+
+	@include('layouts/header')
 
 	<div id="content">
 
@@ -18,7 +20,9 @@
 
 	</div>
 
-	@include('layouts_maiasolucoes/footer')
+	<!--@include('layouts/footer')-->
+
+    {{ Asset::container('bootstrapper')->scripts(); }}
 
 </body>
 
