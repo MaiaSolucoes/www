@@ -6,17 +6,16 @@ body{
 }
 
 #header{
-    width: 100%;
-    height: 140px;
-}
-#inside_header{
-    width: 980px;
     height: 140px;
     margin: 0 auto;
 }
-#inside_header img{
+#header img{
     margin-top: 20px;
+    margin-left: 11%;
     float: left;
+}
+#header div{
+    margin-right: 140px;
 }
 #menu{
     margin-top: 90px;
