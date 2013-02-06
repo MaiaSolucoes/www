@@ -9,18 +9,22 @@ body{
     height: 140px;
     margin: 0 auto;
 }
+
 #header img{
     margin-top: 20px;
     margin-left: 11%;
     float: left;
 }
+
 #header div{
     margin-right: 140px;
 }
+
 #menu{
     margin-top: 90px;
     float:right;
 }
+
 #menu ul {
     padding:0px;
     margin:0px;
@@ -28,7 +32,10 @@ body{
     width: 100%;
     list-style:none;
 }
-#menu ul li { display: inline; }
+#menu ul li {
+    display: inline;
+}
+
 #menu ul li a {
     padding: 2px 15px;
     float:right;
@@ -39,7 +46,7 @@ body{
     text-decoration: none;
 }
 #menu ul li a:hover{
-    color: #000;
+    color: #002a80;
 }
 
 #footer{
@@ -47,6 +54,7 @@ body{
     height: 1px;
     background-color: #AAA9A9;
 }
+
 #inside_footer{
     width: 980px;
     margin: 0 auto;
@@ -70,12 +78,15 @@ p{
     line-height: 1.25em;
     margin-left: 100px;
 }
+
 .p>p{
     font-size: 1em;
 }
+
 .p>h1{
     margin-left: 70px;
 }
+
 .box1>p{
     margin: 0;
 }
@@ -96,6 +107,7 @@ a{
     height: 310px;
     margin: 95px auto;
 }
+
 #arrow{
     margin: 60px -30px 0 0;
     float: left;
@@ -109,9 +121,11 @@ a{
 .right_align{
     margin-left: 560px;
 }
+
 .left_align{
     margin-left: 150px;
 }
+
 .clear{
     clear: both;
 }
@@ -121,9 +135,11 @@ a{
     height: 500px;
     width: 800px;
 }
+
 #form{
     float: right;
 }
+
 #contato{
     float: left;
 }
