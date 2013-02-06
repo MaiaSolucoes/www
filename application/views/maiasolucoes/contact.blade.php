@@ -1,4 +1,8 @@
-@layout('layouts_maiasolucoes/default')
+@layout('layouts/default')
+
+@section('title')
+    Contato
+@endsection
 
 @section('conteudo')
 

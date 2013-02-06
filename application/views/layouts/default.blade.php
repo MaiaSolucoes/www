@@ -2,7 +2,7 @@
 <head>
 
     <meta charset="utf-8">
-    <title>title</title>
+    <title>@yield('title')</title>
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
     {{ Asset::container('bootstrapper')->styles(); }}
     {{ Asset::styles(); }}
@@ -20,7 +20,7 @@
 
 	</div>
 
-	<!--@include('layouts/footer')-->
+	@include('layouts/footer')
 
     {{ Asset::container('bootstrapper')->scripts(); }}
 
