@@ -15,7 +15,7 @@
 		Ajudar nossos clientes a desenvolver seu potencial</h1>
 		<br />
 		<p>Nós fazemos isso criando soluções intuitivas e que funcionem de verdade.</p>
-        <a href="solucoes">Saiba Mais »</a>
+        <a href="solutions">Saiba Mais »</a>
 
 	</div>
 

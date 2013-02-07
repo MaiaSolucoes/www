@@ -175,6 +175,7 @@ a{
     left: 50%;
     margin-left: -126px;
     margin-top: 20px;
+    padding-bottom: 10px;
     font-family: 'Crete Round';
     color: rgb(53, 102, 130);
 }
@@ -182,5 +183,7 @@ a{
 .terms{
     position:absolute;
     left:75%;
-    margin-top: 20px;
+    margin-top: 23px;
+    font-family: 'Crete Round';
+    color: rgb(53, 102, 130);
 }
