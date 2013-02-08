@@ -52,7 +52,7 @@ return array(
 	),
 	"not_in"         => "O :attribute selecionado é inválido.",
 	"numeric"        => "O :attribute deve ser um número.",
-	"required"       => "O campo :attribute deve ser preenchido.",
+	"required"       => "Este campo deve ser preenchido.",
 	"same"           => "O :attribute e :other devem ser iguais.",
 	"size"           => array(
 		"numeric" => "O :attribute deve ser :size.",

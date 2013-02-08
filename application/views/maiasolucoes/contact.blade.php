@@ -19,10 +19,11 @@
 
 		<div id="form">
 
-		    {{ Form::open(URL::to(''), 'POST', array('class'=>'span4')) }}
+		    {{ Form::open(URL::to('/contact/process'), 'POST', array('class'=>'span4')) }}
 
-			    {{ Form::label('nome', 'Seu nome') }}
-			    {{ Form::text('nome', '', array('class'=>'span4', 'style' => 'height: 30px;')) }}
+			    {{ Form::label('name', 'Seu nome') }}
+                {{ $errors->has('name') ? $errors->first('name') : '' }}
+			    {{ Form::text('name', '', array('class'=>'span4', 'style' => 'height: 30px;')) }}
 
 			    {{ Form::label('email', 'Email') }}
 			    {{ Form::email('email', '', array('class'=>'span4 input', 'style' => 'height: 30px;')) }}
@@ -36,6 +37,7 @@
 		    {{ Form::close() }}
 
 		</div>
+
 
 	</div>
 
