@@ -187,3 +187,7 @@ a{
     font-family: 'Crete Round';
     color: rgb(53, 102, 130);
 }
+
+.input{
+    height: 30px
+}

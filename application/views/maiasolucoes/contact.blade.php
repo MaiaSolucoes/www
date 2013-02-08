@@ -22,10 +22,10 @@
 		    {{ Form::open(URL::to(''), 'POST', array('class'=>'span4')) }}
 
 			    {{ Form::label('nome', 'Seu nome') }}
-			    {{ Form::text('nome', '', array('class'=>'span4')) }}
+			    {{ Form::text('nome', '', array('class'=>'span4 input')) }}
 
 			    {{ Form::label('email', 'Email') }}
-			    {{ Form::text('email', '', array('class'=>'span4')) }}
+			    {{ Form::text('email', '', array('class'=>'span4 input')) }}
 
 			    {{ Form::label('message', 'Mensagem') }}
 			    {{ Form::textarea('message', '', array('class'=>'span4')) }}
