@@ -6,7 +6,21 @@
 
 @section('conteudo')
 
-	<div id="contato_area">
+<div class="alert alert-success" >
+    <a class="close" data-dismiss="alert" href="#">&times;</a>
+    <h3>
+        Sua mensagem foi enviada com sucesso.<br>
+        Logo entraremos em contato com você.aaaa
+    </h3>
+</div>
+
+
+
+
+
+
+
+<div id="contato_area">
 
 		<div id="contato" class="offset">
 
@@ -22,6 +36,7 @@
 		    {{ Form::open(URL::to('/contact/process'), 'POST', array('class'=>'span4')) }}
 
 			    {{ Form::label('name', 'Seu nome') }}
+
                 {{ $errors->has('name') ? $errors->first('name') : '' }}
 			    {{ Form::text('name', '', array('class'=>'span4', 'style' => 'height: 30px;')) }}
 
@@ -35,6 +50,7 @@
 			    {{ Form::submit('Enviar', array('class'=>'btn btn-inverse')) }}
 
 		    {{ Form::close() }}
+
 
 		</div>
 

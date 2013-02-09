@@ -1,6 +1,6 @@
 @layout('layouts/default')
 @section('title')
-    Sobre
+    Sobre Nós
 @endsection
 
 @section('conteudo')
