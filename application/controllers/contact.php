@@ -31,11 +31,13 @@ class Contact_Controller extends Base_Controller {
             $contact->save();
 
             if($contact->save() == 1){
-                return Redirect::to('../message');
+
+                return Redirect::to('../contact')->with('result', '2');
 
             }
             else{
-                return 'nao foi';
+
+                return Redirect::to('../contact')->with('result', '1');
             }
 
         }
