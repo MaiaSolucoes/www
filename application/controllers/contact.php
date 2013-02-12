@@ -49,22 +49,3 @@ class Contact_Controller extends Base_Controller {
 
     }
 }
-
-
-
-
-/*    <script type="text/javascript">
-    function atualizaValor(){
-        var finalidade;
-        finalidade = $('#finalidade').val();
-        $.ajax({url: "ajaxfinalidade.php?finalidade="+finalidade}).done(function(html) {
-            if(finalidade == "finalidade"){
-                $('#preco').html(html);
-                $('#preco').attr('disabled','disabled');
-            }else{
-                $('#preco').removeAttr('disabled');
-                $('#preco').html(html);
-            }
-        });
-    }
-</script>*/
