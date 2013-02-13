@@ -10,25 +10,62 @@ class Login_Controller extends Base_Controller{
 
 	public function action_login(){
 
-		$input = Input::all();
+        $input = Input::all();
+
+        $user = new User();
+        $user->email = 'contato@maiasolucoes.com.br';
+        $user->password = Hash::make('oiBoi!@');
+        $user->save();
+
+        //dd($input);
 
 		if( Auth::attempt(array ('username'=> $input['email'], 'password'=> $input['password']))){
 
-			return Redirect::to('login');
+			return Redirect::to('../admin');
 
 		}else{
 
-			echo 'falha na autenticacao';
+            return Redirect::to('../login')->with('result', '1');
 
 		}
 	}
 
-	public function action_logout(){
+   /* public function action_process(){
+        $input = Input::all();
+
+        $validate = Validator::make($input,$this->roles);
+
+
+        if($validate->passes()){
+
+            $contact = new Contact();
+            $contact->name = $input['name'];
+            $contact->email = $input['email'];
+            $contact->message = $input['message'];
+            $contact->save();
+
+            if($contact->save() == 1){
+
+                return Redirect::to('../contact')->with('result', '2');
+
+            }
+            else{
+
+                return Redirect::to('../contact')->with('result', '1');
+            }
+        }
+        else{
+            return Redirect::to('../contact')->with_errors($validate);
+
+        }
+    }*/
+
+	/*public function action_logout(){
 
 		Auth::logout();
 
 		return Redirect::to('login');
 
-	}
+	}*/
 
 }
