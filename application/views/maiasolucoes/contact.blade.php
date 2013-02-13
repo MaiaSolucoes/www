@@ -6,14 +6,6 @@
 
 @section('conteudo')
 
-
-
-
-
-
-
-
-
 <div id="contato_area">
 
 		<div id="contato" class="offset">
@@ -29,7 +21,6 @@
 
             <!--  0 erro
                   1 sucesso-->
-
 
             @if (Session::get('result')==2)
                 <div class="alert alert-error">
@@ -81,9 +72,7 @@
 
 		    {{ Form::close() }}
 
-
 		</div>
-
 
 	</div>
 

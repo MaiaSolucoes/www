@@ -1,5 +1,4 @@
 <?php
-
 class Contact_Controller extends Base_Controller {
 
     private $roles = array(
@@ -9,8 +8,6 @@ class Contact_Controller extends Base_Controller {
 
     );
 
-
-
 	public function action_index()
 	{
 		return View::make('maiasolucoes.contact');
@@ -19,10 +16,10 @@ class Contact_Controller extends Base_Controller {
     public function action_process(){
         $input = Input::all();
 
-        $validar = Validator::make($input,$this->roles);
+        $validate = Validator::make($input,$this->roles);
 
 
-        if($validar->passes()){
+        if($validate->passes()){
 
             $contact = new Contact();
             $contact->name = $input['name'];
@@ -39,13 +36,10 @@ class Contact_Controller extends Base_Controller {
 
                 return Redirect::to('../contact')->with('result', '1');
             }
-
         }
         else{
-            return Redirect::to('../contact')->with_errors($validar);
+            return Redirect::to('../contact')->with_errors($validate);
 
         }
-
-
     }
 }
