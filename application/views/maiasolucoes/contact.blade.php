@@ -22,14 +22,14 @@
             <!--  0 erro
                   1 sucesso-->
 
-            @if (Session::get('result')==2)
+            @if (Session::get('result')==1)
                 <div class="alert alert-error">
                     <a class="close" data-dismiss="alert" href="#">&times;</a>
                     <b>Mensagem de erro(erro ao inserir no banco)</b>
                 </div>
             @endif
 
-            @if (Session::get('result')==1)
+            @if (Session::get('result')==2)
                 <div class="alert alert-success">
                     <a class="close" data-dismiss="alert" href="#">&times;</a>
                     <b>Mensagem de sucesso(inserida no banco).</b>
