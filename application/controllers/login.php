@@ -11,12 +11,6 @@ class Login_Controller extends Base_Controller{
 	public function action_login(){
 
         $input = Input::all();
-
-        $user = new User();
-        $user->email = 'contato@maiasolucoes.com.br';
-        $user->password = Hash::make('oiBoi!@');
-        $user->save();
-
         //dd($input);
 
 		if( Auth::attempt(array ('username'=> $input['email'], 'password'=> $input['password']))){

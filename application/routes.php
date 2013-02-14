@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -32,12 +31,36 @@
 |
 */
 
+/*Route::get('/admin', function()
+{
+    return Redirect::to('../admin');
+    //if (Auth::guest()) return Redirect::to('../login');
+});*/
+
+Route::get('admin', array('before' => 'auth', 'do' => function(){
+
+    return View::make('login/contacts');
+}));
+
 Route::controller(Controller::detect());
+
+/*Route::get('/admin', function()
+{
+    return 'admin';
+//    return Redirect::to('../admin');
+});
+
+*/
+
+
 
 Route::get('/', function()
 {
 	return Redirect::to('../main');
 });
+
+
+
 
 /*
 |-------------------

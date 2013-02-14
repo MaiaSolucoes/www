@@ -9,31 +9,26 @@ Login
 
 <div id="banner">
 
-<!--{{$message =  Session::get('message') }}-->
-<!--@foreach($message as $valor)
-
-    {{ $valor->message }}
-
-@endforeach-->
-
-
-    <!--@forelse($message as $produto)
-        {{ $produto->name }}
-        {{ $produto->email }}
-        {{ $produto->message }}
-    @empty
-        Nenhum regstro cadastrado.
-    @endforelse-->
-
-
-    @forelse ($messages as $message)
-    {{ $message->name }}
-    {{ $message->email }}
-    {{ $message->message }}
-    @empty
-    There are not posts in the array!
-    @endforelse
-
+    <table class="table table-hover">
+        <th>Email</th>
+        <th>Nome</th>
+        <th>Data de envio</th>
+        @forelse($messages as $valor)
+        <tr>
+            <td>{{ $valor->email }}</td>
+            <td>{{ $valor->name }}</td>
+            <td>{{ $valor->message }}</td>
+            <td>{{ $valor->created_at }}</td>
+        </tr>
+        @empty
+        <tr>
+            <td>Nenhum registro cadastrado.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        @endforelse
+    </table>
 
 
 </div>
