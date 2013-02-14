@@ -31,32 +31,18 @@
 |
 */
 
-/*Route::get('/admin', function()
-{
-    return Redirect::to('../admin');
-    //if (Auth::guest()) return Redirect::to('../login');
-});*/
 
-Route::get('admin', array('before' => 'auth', 'do' => function(){
+/*Route::get('admin', array('before' => 'auth', 'do' => function(){
 
     $messages = Contact::all();
-        /*dd($messages);*/
+
 
     return View::make('login.contacts')->with(array('messages' => $messages));
     //return View::make('login/contacts');
     //return 'admin';
-}));
+}));*/
 
 Route::controller(Controller::detect());
-
-/*Route::get('/admin', function()
-{
-    return 'admin';
-//    return Redirect::to('../admin');
-});
-
-*/
-
 
 
 Route::get('/', function()

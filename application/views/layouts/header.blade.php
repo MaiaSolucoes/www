@@ -11,6 +11,7 @@
             <li><a href="aboutus">Sobre Nós</a></li>
             <li><a href="solutions">Soluções</a></li>
             <li><a href="contact">Contato</a></li>
+            <li>@yield('logout')</li>
         </ul>
     </div>
 </div>
