@@ -1,7 +1,7 @@
 @layout('layouts/default')
 
 @section('title')
-Login
+Contatos
 @endsection
 
 @section('banner')
@@ -10,13 +10,15 @@ Login
 <div id="banner">
 
     <table class="table table-hover">
-        <th>Email</th>
         <th>Nome</th>
+        <th>Email</th>
+        <th>Mensagem</th>
+
         <th>Data de envio</th>
         @forelse($messages as $valor)
         <tr>
-            <td>{{ $valor->email }}</td>
             <td>{{ $valor->name }}</td>
+            <td>{{ $valor->email }}</td>
             <td>{{ $valor->message }}</td>
             <td>{{ $valor->created_at }}</td>
         </tr>
