@@ -9,7 +9,7 @@ Admin
 @if( Auth::check())
 
 @section('logout')
-{{ HTML::link('admin/logout','Logout') }}
+{{ HTML::link('../admin/logout','Logout') }}
 @endsection
 
 

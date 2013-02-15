@@ -4,30 +4,27 @@
 Contatos
 @endsection
 
-
-@section('conteudo')
+@section('banner')
 
 @if( Auth::check())
 
     @section('logout')
-    {{ HTML::link('admin/logout','Logout') }}
+    {{ HTML::link('../admin/logout','Logout') }}
     @endsection
-
+<br><br><br><br>
     <center>
         <h3>Olá, {{ Auth::User()->email }}</h3>
     </center>
     <div class="container">
-        <table class="table table-hover">
+        <table class="table table-hover pull-left">
             <th>Nome</th>
             <th>Email</th>
             <th>Mensagem</th>
-            <th>Data de envio</th>
             @forelse($messages as $valor)
             <tr>
                 <td>{{ $valor->name }}</td>
                 <td>{{ $valor->email }}</td>
                 <td>{{ $valor->message }}</td>
-                <td>{{ $valor->created_at }}</td>
             </tr>
             @empty
             <tr>
@@ -39,6 +36,7 @@ Contatos
             @endforelse
         </table>
     </div>
+        <br><br><br><br><br><br><br><br>
 @else
     {{ Redirect::to('../admin')}}
 @endif

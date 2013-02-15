@@ -31,16 +31,10 @@
 |
 */
 
-
-/*Route::get('admin', array('before' => 'auth', 'do' => function(){
-
-    $messages = Contact::all();
-
-
-    return View::make('login.contacts')->with(array('messages' => $messages));
-    //return View::make('login/contacts');
-    //return 'admin';
-}));*/
+Route::get('admin/login', function()
+{
+    return Redirect::to('../admin');
+});
 
 Route::controller(Controller::detect());
 
@@ -49,9 +43,6 @@ Route::get('/', function()
 {
 	return Redirect::to('../main');
 });
-
-
-
 
 /*
 |-------------------
@@ -124,5 +115,5 @@ Route::filter('csrf', function()
 
 Route::filter('auth', function()
 {
-	if (Auth::guest()) return Redirect::to('../login');
+	if (Auth::guest()) return Redirect::to('../admin');
 });

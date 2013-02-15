@@ -30,7 +30,6 @@ class Contact_Controller extends Base_Controller {
             if($contact->save() == 1){
 
                 return Redirect::to('../contact')->with('result', '2');
-
             }
             else{
 
@@ -39,7 +38,6 @@ class Contact_Controller extends Base_Controller {
         }
         else{
             return Redirect::to('../contact')->with_errors($validate);
-
         }
     }
 }
