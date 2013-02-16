@@ -1,25 +1,10 @@
 @layout('layouts/default')
 
 @section('title')
-Admin
+Administração
 @endsection
 
 @section('conteudo')
-
-@if( Auth::check())
-
-@section('logout')
-{{ HTML::link('../admin/logout','Logout') }}
-@endsection
-
-
-<div class="offset2 well">
-
-    <h3>Olá, {{ Auth::User()->email }}</h3>
-
-</div>
-
-@else
 
 <div id="banner">
     <h1 class="offset4">Login</h1>
@@ -44,5 +29,5 @@ Admin
 
     {{ Form::close() }}
 </div>
-@endif
+
 @endsection

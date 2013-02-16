@@ -3,6 +3,10 @@
 class Admin_Controller extends Base_Controller{
 
 	public function action_index(){
+        if(Auth::check()){
+            return Redirect::to('../admin/contacts')->with('auth', 'true');
+
+        }
 
 		return View::make('admin.index');
 
@@ -12,18 +16,41 @@ class Admin_Controller extends Base_Controller{
 
         $input = Input::all();
 
-		if( Auth::attempt(array ('username'=> $input['email'], 'password'=> $input['password']))){
+        if(empty($input)){
 
-			$messages = Contact::all();
+            if(Auth::check()){
 
-            return View::make('admin.contacts')->with(array('messages' => $messages));
+                return Redirect::to('../admin/contacts')->with('auth', 'true');
 
-		}else{
+            }
+            return Redirect::to('../admin');
+        }
+        else{
 
-            return Redirect::to('../admin')->with('result', '1');
+            if(Auth::attempt(array ('username'=> $input['email'], 'password'=> $input['password'])) ){
 
-		}
+                return Redirect::to('../admin/contacts')->with('auth', 'true');
+
+            }else{
+
+                return Redirect::to('../admin')->with('result', '1');
+
+            }
+        }
 	}
+
+    public function action_contacts(){
+
+        if(!Auth::check()){
+            return Redirect::to('../admin');
+
+        }
+        $messages = Contact::all();
+        $auth = Session::get('auth');
+        return $auth == true
+            ? View::make('admin.contacts')->with(array('messages' => $messages))
+            : Redirect::to('../admin')->with('result', '1');
+    }
 
     public function action_logout(){
 
