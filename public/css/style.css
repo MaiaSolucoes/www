@@ -34,17 +34,18 @@ body{
 }
 #menu ul li {
     display: inline;
+    float: left;
 }
 
 #menu ul li a {
     padding: 2px 15px;
-    float:right;
     font-family: 'Crete Round', Arial;
     font-size: 22px;
     color: #7D818C;
     text-transform: uppercase;
     text-decoration: none;
 }
+
 #menu ul li a:hover{
     color: #002a80;
 }
