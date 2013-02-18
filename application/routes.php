@@ -31,13 +31,7 @@
 |
 */
 
-Route::get('admin/login', function()
-{
-    return Redirect::to('../admin');
-});
-
 Route::controller(Controller::detect());
-
 
 Route::get('/', function()
 {
