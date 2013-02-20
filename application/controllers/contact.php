@@ -2,24 +2,27 @@
 class Contact_Controller extends Base_Controller {
 
     private $roles = array(
+
         'name' => 'required',
         'email' => 'required',
         'message' => 'required'
 
     );
 
-	public function action_index()
-	{
-		return View::make('maiasolucoes.contact');
-	}
+	public function action_index() {
 
-    public function action_process(){
+		return View::make('maiasolucoes.contact');
+
+    }
+
+    public function action_process() {
+
         $input = Input::all();
 
         $validate = Validator::make($input,$this->roles);
 
 
-        if($validate->passes()){
+        if($validate->passes()) {
 
             $contact = new Contact();
             $contact->name = $input['name'];
@@ -27,17 +30,21 @@ class Contact_Controller extends Base_Controller {
             $contact->message = $input['message'];
             $contact->save();
 
-            if($contact->save() == 1){
+            if($contact->save() == 1) {
 
                 return Redirect::to('../contact')->with('result', '2');
-            }
-            else{
+
+            } else {
 
                 return Redirect::to('../contact')->with('result', '1');
+
             }
-        }
-        else{
+        } else {
+
             return Redirect::to('../contact')->with_errors($validate);
+
         }
+
     }
+
 }

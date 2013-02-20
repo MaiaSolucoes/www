@@ -33,9 +33,10 @@
 
 Route::controller(Controller::detect());
 
-Route::get('/', function()
-{
+Route::get('/', function() {
+
 	return Redirect::to('../main');
+
 });
 
 /*

@@ -2,10 +2,14 @@
 <head>
 
     <meta charset="utf-8">
+
     <title>@yield('title')</title>
+
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+
     {{ Asset::container('bootstrapper')->styles(); }}
     {{ Asset::styles(); }}
+
     <script type="text/javascript">
         $(function(){
             $('.alert').alert('close');
@@ -22,7 +26,8 @@
 	<div id="content">
 
 		@yield('banner')
-		@yield('conteudo')
+
+        @yield('content')
 
 	</div>
 

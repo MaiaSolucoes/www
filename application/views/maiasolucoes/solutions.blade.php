@@ -1,10 +1,12 @@
 @layout('layouts/default')
 
 @section('title')
+
     Solu&ccedil;&otilde;es
+
 @endsection
 
-@section('conteudo')
+@section('content')
 
 	<div id="box">
 
@@ -15,7 +17,9 @@
 			Nulla facilisis cursus dui, ac gravida nunc aliquet vitae.
 			AA congue turpis lacus eu felis.
 			Nulla facilisis cursus dui, ac gravida nunc aliquet vitae.</p>
+
 		</div>
+
 		<div class="p box1">
 	
 			<h1>Exemplo 2</h1>
@@ -24,6 +28,7 @@
 			Ut auctor velit quis purus lobortis nec lobortis ipsum fermentum.</p>
 
 		</div>
+
 		<div class="p box1">
 	
 			<h1>Exemplo 3 </h1>
@@ -31,6 +36,7 @@
 			 Aliquam erat volutpat. In mattis dignissim justo ut facilisis. Nunc ante lacus, condimentum a viverra id, luctus eu lorem. </p>
 
 		</div>
+
 		<div class="p box1">
 	
 			<h1>Exemplo 4</h1>
@@ -40,6 +46,7 @@
 		</div>
 
 	</div>
+
 	<div class="clear"></div>
 
 @endsection

@@ -1,9 +1,12 @@
 @layout('layouts/default')
+
 @section('title')
+
     Sobre Nós
+
 @endsection
 
-@section('conteudo')
+@section('content')
 
 	<div id="box">
 
@@ -16,6 +19,7 @@
 			 Nam laoreet metus non nisi ullamcorper aliquam. Maecenas elementum erat ut ligula varius tincidunt.</p>
 
 		</div>
+
 		<div class="p box1">
 	
 			<h1>Raphael Willian</h1>
@@ -24,6 +28,7 @@
 			Ut auctor velit quis purus lobortis nec lobortis ipsum fermentum.</p>
 
 		</div>
+
 		<div class="p box1">
 	
 			<h1>Cícero Alves</h1>
@@ -31,6 +36,7 @@
 			 Aliquam erat volutpat. In mattis dignissim justo ut facilisis. Nunc ante lacus, condimentum a viverra id, luctus eu lorem. </p>
 
 		</div>
+
 		<div class="p box1">
 	
 			<h1>Matheus Moraes</h1>
@@ -38,7 +44,9 @@
 			Aliquam erat volutpat. In mattis dignissim justo ut facilisis. Nunc ante lacus, condimentum a viverra id, luctus eu lorem. </p>
 
 		</div>
+
 	</div>
+
 	<div class="clear"></div>
 
 @endsection

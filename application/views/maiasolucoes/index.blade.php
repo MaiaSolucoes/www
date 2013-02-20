@@ -1,7 +1,9 @@
 @layout('layouts/default')
 
 @section('title')
+
     Página Inicial
+
 @endsection
 
 @section('banner')

@@ -10,15 +10,16 @@ class Base_Controller extends Controller {
 	 * @return Response
 	 */
 
-    function __construct(){
+    function __construct() {
 
         Asset::add('style', 'css/style.css');
 
     }
 
-	public function __call($method, $parameters)
-	{
+	public function __call($method, $parameters) {
+
 		return Response::error('404');
-	}
+
+    }
 
 }
