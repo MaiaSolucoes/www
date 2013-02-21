@@ -9,6 +9,11 @@ body {
 
 }
 
+#logo a {
+	position: absolute;
+	left: 10%;
+}
+
 #header {
 
     height: 140px;
