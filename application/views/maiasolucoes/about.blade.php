@@ -8,6 +8,8 @@
 
 @section('content')
 
+    <?php $link = 'about';?>
+
 	<div id="box">
 
 		<div class="p box1">

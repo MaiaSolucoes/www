@@ -64,6 +64,8 @@ body {
 
 }
 
+ul#menu li a.ativo { background-color:#F09; }
+
 #menu ul li a:hover {
 
     color: #002a80;
