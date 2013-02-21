@@ -1,12 +1,10 @@
 <div class="navbar" id="header">
 
-    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-    </a>
 
-	<img src="../img/logo.png">
+
+	<a href="index.php">
+		<img src="../img/logo.png">
+	</a>
 
     <div class="nav-collapse collapse" id="menu">
 
