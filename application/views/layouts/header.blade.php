@@ -11,10 +11,17 @@
     <div class="nav-collapse collapse" id="menu">
 
         <ul class="nav">
+<<<<<<< HEAD
             <li><a href="../main"<?php if($link == 'main') {echo 'class="ativo"';} ?>>Principal</a></li>
             <li><a href="../about"<?php if($link == 'about') {echo 'class="ativo"';} ?>>Sobre Nós</a></li>
             <li><a href="../solutions"<?php if($link == 'solutions') {echo 'class="ativo"';} ?>>Soluções</a></li>
             <li><a href="../contact"<?php if($link == 'contact') {echo 'class="ativo"';} ?>>Contato</a></li>
+=======
+            <li><a href="../">Principal</a></li>
+            <li><a href="../about">Sobre Nós</a></li>
+            <li><a href="../solutions">Soluções</a></li>
+            <li><a href="../contact">Contato</a></li>
+>>>>>>> 35
             <li class="active">@yield('logout')</li>
         </ul>
 

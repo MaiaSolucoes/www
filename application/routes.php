@@ -35,8 +35,9 @@ Route::controller(Controller::detect());
 
 Route::get('/', function() {
 
-	return Redirect::to('../main');
-
+    Asset::add('style', 'css/style.css');
+    return View::make('maiasolucoes.index');
+    
 });
 
 /*
