@@ -169,8 +169,11 @@ Termos de Servi&ccedil;os
 		NOSSO ENDEREÇO
 		<br /><br />
 		Maia Soluções em TI LTDA - ME.
+		<br />
 		CEP: 12220-230
+		<br />
 		Rua Juriti, 531, Vila Tatetuba, São José dos Campos - SP
+		<br />
 		http://www.maiasolucoes.com.br
 		<br /><br />
 		NOTIFICAÇÃO E PROCEDIMENTO PARA REIVINDICAÇÕES POR INFRINGÊNCIA DE DIREITO AUTORAL
@@ -200,12 +203,17 @@ Termos de Servi&ccedil;os
 		contatado conforme segue:
 		<br />
 		Agente de Direitos Autorais
+		<br />
 		Rua Juriti, 531, Vila Tatetuba, São José dos Campos - SP
+		<br />
 		Telefone: (12) 3912-7779
+		<br />
 		E-Mail: contato@maiasolucoes.com.br
 		<br />
 		Endereço para a entrega expressa de correspondência:
+		<br />
 		Rua Juriti, 531, Vila Tatetuba, São José dos Campos - SP, Brasil
+		<br />
 		CEP: 12220-230
 
 	</p>
