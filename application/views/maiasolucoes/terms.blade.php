@@ -201,17 +201,17 @@ Termos de Servi&ccedil;os
 		<br />
 		O Agente de Direitos Autorais da Maia Soluções para efeito de notificação de infringência de direitos pode ser
 		contatado conforme segue:
-		<br />
+		<br /><br />
 		Agente de Direitos Autorais
-		<br />
+		<br /><br />
 		Rua Juriti, 531, Vila Tatetuba, São José dos Campos - SP
 		<br />
 		Telefone: (12) 3912-7779
 		<br />
 		E-Mail: contato@maiasolucoes.com.br
-		<br />
+		<br /><br />
 		Endereço para a entrega expressa de correspondência:
-		<br />
+		<br /><br />
 		Rua Juriti, 531, Vila Tatetuba, São José dos Campos - SP, Brasil
 		<br />
 		CEP: 12220-230
