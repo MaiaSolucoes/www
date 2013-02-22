@@ -91,7 +91,7 @@ ul#menu li a.ativo { background-color:#F09; }
 
 }
 
-h1, h4, p, a {
+h1, p, a {
 
     font-family: 'Crete Round';
     color: #356682;
@@ -101,9 +101,35 @@ h1, h4, p, a {
 
 }
 
+h2 {
+	font-family: 'Crete Round';
+	color: #356682;
+	font-size: 2.1em;
+	line-height: 1.2em;
+	margin: 0 0 10px;
+}
+
+h3 {
+	font-family: 'Crete Round';
+	color: #356682;
+	font-size: 1.8em;
+	line-height: 1.2em;
+	margin: 0 0 10px;
+}
+
+h4 {
+
+	font-family: 'Crete Round';
+	color: #356682;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	margin: 0 0 10px;
+
+}
+
 p {
 
-    color: #8BA5B4;
+    color: #5f8eb4;
     font-size: 1.375em;
     line-height: 1.25em;
     margin-left: 100px;
