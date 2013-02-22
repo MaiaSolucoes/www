@@ -30,7 +30,7 @@
         @yield('content')
 
 	</div>
-	<div id="footer" style="border-top: 1px solid #c6c6c6; height: 50px">
+	<div id="footer">
 		@include('layouts/footer')
 	</div>
     {{ Asset::container('bootstrapper')->scripts(); }}
