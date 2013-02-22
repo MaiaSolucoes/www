@@ -172,9 +172,9 @@ a {
 #content {
 
     width: 970px;
-	height: 60%;
+
 	min-height: 60%;
-	max-height: 400%;
+
     margin: 0 auto;
 
 }
