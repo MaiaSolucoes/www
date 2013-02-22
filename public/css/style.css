@@ -151,6 +151,7 @@ p {
 .box1>p {
 
     margin: 0;
+	text-align: justify;
 
 }
 .sentence_index {
