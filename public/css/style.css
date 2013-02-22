@@ -188,9 +188,8 @@ a {
 #content {
 
     width: 970px;
-
 	min-height: 400px;
-
+	padding-bottom: 60px;
     margin: 0 auto;
 
 }
