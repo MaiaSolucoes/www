@@ -91,19 +91,13 @@ ul#menu li a.ativo { background-color:#F09; }
 
 }
 
-h1, h5, p, a {
+h1, h4, p, a {
 
     font-family: 'Crete Round';
     color: #356682;
     font-size: 2.3em;
     line-height: 1.2em;
     margin: 0 0 10px;
-
-}
-h4 {
-
-    font-size: 1.6em;
-    color: black;
 
 }
 
