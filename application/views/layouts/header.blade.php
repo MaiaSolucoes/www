@@ -6,7 +6,9 @@
         <span class="icon-bar"></span>
     </a>
 
-    <img src="../img/logo.png">
+    <a href="../" id="link_img">
+		<img src="../img/logo.png">
+    </a>
 
     <div class="nav-collapse collapse" id="menu">
 
