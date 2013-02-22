@@ -16,7 +16,7 @@
 
             <div class="alert alert-error">
                 <a class="close" data-dismiss="alert" href="#">&times;</a>
-                <b>Mensagem de erro(erro ao autenticar)</b>
+                <b>Usu&aacute;rio e/ou senha inv&aacute;lidos.</b>
             </div>
 
         @endif
