@@ -12,7 +12,7 @@ Solu&ccedil;&otilde;es
 
 	<div class="p box1">
 
-		<h1>Seu negócio no caminho certo</h1>
+		<h2>Seu negócio no caminho certo</h2>
 		<p class="clear">
 			Nós trabalhamos duro para entregar a você as ferramentas necessárias para tornar a sua empresa mais
 			competitiva e capaz de tomar decisões com mais velocidade. Nossa ferramenta de micro-ERP permite
@@ -24,7 +24,7 @@ Solu&ccedil;&otilde;es
 
 	<div class="p box1">
 
-		<h1>Aproxime-se dos seus clientes</h1>
+		<h3>Aproxime-se dos seus clientes</h3>
 		<p class="clear">
 			Nossa ferramenta de relacionamento com o cliente aproxima sua você dos seus clientes aonde eles
 			estiverem. Crie campanhas de marketing personalizadas de acordo com o perfil dos seus clientes e
