@@ -86,7 +86,7 @@ ul#menu li a.ativo { background-color:#F09; }
 
 #footer {
 
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	margin-bottom: 10px;
     /* background-color: #E4E4E4; */
