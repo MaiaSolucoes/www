@@ -172,7 +172,8 @@ a {
 #content {
 
     width: 970px;
-	min-height: 50%;
+	height: 70%;
+	min-height: 70%;
 	max-height: 80%;
     margin: 0 auto;
 
