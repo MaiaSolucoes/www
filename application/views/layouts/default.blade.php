@@ -23,10 +23,6 @@
 	<div id="all">
 		@include('layouts/header')
 
-        @yield('link_select')
-
-		@include('layouts/header')
-		
 		<div id="content">
 
 			@yield('banner')
