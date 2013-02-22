@@ -15,7 +15,7 @@
             <li><a href="../about" <?php if($link == 'about') {echo 'style="color: #000"';} ?>>Sobre Nós</a></li>
             <li><a href="../solutions" <?php if($link == 'solutions') {echo 'style="color: #000"';} ?>>Soluções</a></li>
             <li><a href="../contact" <?php if($link == 'contact') {echo 'style="color: #000"';} ?>>Contato</a></li>
-            <li class="active">@yield('logout')</li>
+            <li <?php echo 'style="color: #000"'; ?>>@yield('logout')</li>
         </ul>
 
     </div>
