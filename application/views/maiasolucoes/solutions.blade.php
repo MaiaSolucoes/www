@@ -12,7 +12,7 @@ Solu&ccedil;&otilde;es
 
 	<div class="p box1">
 
-		<h2>Seu negócio no caminho certo</h2>
+		<h4>Seu negócio no caminho certo</h4>
 		<p class="clear">
 			Nós trabalhamos duro para entregar a você as ferramentas necessárias para tornar a sua empresa mais
 			competitiva e capaz de tomar decisões com mais velocidade. Nossa ferramenta de micro-ERP permite
@@ -24,7 +24,7 @@ Solu&ccedil;&otilde;es
 
 	<div class="p box1">
 
-		<h3>Aproxime-se dos seus clientes</h3>
+		<h4>Aproxime-se dos seus clientes</h4>
 		<p class="clear">
 			Nossa ferramenta de relacionamento com o cliente aproxima sua você dos seus clientes aonde eles
 			estiverem. Crie campanhas de marketing personalizadas de acordo com o perfil dos seus clientes e
@@ -38,7 +38,7 @@ Solu&ccedil;&otilde;es
 
 	<div class="p box1">
 
-		<h1>Apenas o necessário</h1>
+		<h4>Apenas o necessário</h4>
 		<p class="clear">
 			Nós não gostamos de telas de cadastro sem sentido e de sistemas difíceis de se entender. Temos a
 			preocupação de entregar ferramentas realmente úteis e fáceis de se usar. Nossa filosofia é simples:
@@ -49,7 +49,7 @@ Solu&ccedil;&otilde;es
 
 	<div class="p box1">
 
-		<h1>Pague somente o que usar</h1>
+		<h4>Pague somente o que usar</h4>
 		<p class="clear">
 			Nossos contratos não possuem tempo mínimo de permanência e todos os serviços são ofertados sob demanda.
 			Isso significa que você paga uma pequena quantia mensal pelo que utilizar. Recursos não utilizados não
@@ -60,7 +60,7 @@ Solu&ccedil;&otilde;es
 
 	<div class="p box1">
 
-		<h1>Aumente sua presença</h1>
+		<h4>Aumente sua presença</h4>
 		<p class="clear">
 			Esteja online 24 horas por dia, 7 dias por semana e exponha o seu negócio na Internet. Temos uma
 			ferramenta simples o suficiente para ser usada por leigos e que permite construir seu site em minutos.
