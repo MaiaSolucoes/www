@@ -30,7 +30,7 @@
         @yield('content')
 
 	</div>
-	<div id="footer">
+	<div id="footer121212">
 		@include('layouts/footer')
 	</div>
     {{ Asset::container('bootstrapper')->scripts(); }}
