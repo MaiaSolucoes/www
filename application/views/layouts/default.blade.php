@@ -6,7 +6,7 @@
     <title>@yield('title')</title>
 
     <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
-
+    <link rel='shortcut icon' href='/favicon.png' />
     {{ Asset::container('bootstrapper')->styles(); }}
     {{ Asset::styles(); }}
 

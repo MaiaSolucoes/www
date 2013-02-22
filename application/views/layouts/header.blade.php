@@ -6,12 +6,14 @@
         <span class="icon-bar"></span>
     </a>
 
-    <img src="../img/logo.png">
+    <a href="../" id="link_img">
+		<img src="../img/logo.png">
+    </a>
 
     <div class="nav-collapse collapse" id="menu">
 
         <ul class="nav">
-            <li><a href="../main" <?php if($link == 'main') {echo 'style="color: #000"';} ?>>Principal</a></li>
+            <li><a href="../" <?php if($link == 'main') {echo 'style="color: #000"';} ?>>Principal</a></li>
             <li><a href="../about" <?php if($link == 'about') {echo 'style="color: #000"';} ?>>Sobre Nós</a></li>
             <li><a href="../solutions" <?php if($link == 'solutions') {echo 'style="color: #000"';} ?>>Soluções</a></li>
             <li><a href="../contact" <?php if($link == 'contact') {echo 'style="color: #000"';} ?>>Contato</a></li>
