@@ -28,8 +28,8 @@ Solu&ccedil;&otilde;es
 		<p class="clear">
 			Nossa ferramenta de relacionamento aproxima sua você dos seus clientes aonde eles estiverem. Crie campanhas
 			de marketing personalizadas de acordo com o perfil dos seus clientes e acompanhe os resultados em tempo
-			real. Envie mensagens de e-mail ou SMS automaticamente (por exemplo, em ocasiões especiais como aniversários
-			ou datas importantes). Mantenha contato e veja o que seus clientes dizem dos seus produtos nas redes sociais.
+			real. Envie mensagens de e-mail ou SMS automaticamente (por exemplo, em aniversários ou outras datas
+			importantes). Mantenha contato e veja o que seus clientes dizem dos seus produtos nas redes sociais.
 			Tudo em uma ferramenta simples, direta e elegante.
 		</p>
 
