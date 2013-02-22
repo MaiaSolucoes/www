@@ -19,9 +19,8 @@
         <div id="contact" class="offset">
 
             <h1>Telefone:</h1>
-            <h4>(12) 3906-0348</h4>
-            <h4>(12) 9752-7325</h4>
-            <h1>Email:</h1><h4>maia@maiasolucoes.com.br</h4>
+            <h4>(12) 3912-7779</h4>
+            <h1>Email:</h1><h4>contato@maiasolucoes.com.br</h4>
 
         </div>
 

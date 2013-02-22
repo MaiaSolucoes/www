@@ -3,10 +3,15 @@
     margin: 0;
 
 }
-
 body {
 
+* html #all {
+	height: 100%; /* hack for IE6 (height as min-height) */
+}
+html, body {
+
     background-color: #E4E4E4;
+	height: 100%;
 
 }
 
@@ -15,6 +20,15 @@ body {
 	margin-top: 20px;
 	margin-left: 11%;
 	float: left;
+
+}
+
+#all {
+
+	position: relative;
+	height: 100%;
+	width: 100%;
+	display: table;
 
 }
 
@@ -42,7 +56,7 @@ body {
 #menu {
 
     margin-top: 90px;
-    float: right;
+    float:right;
 
 }
 
@@ -74,6 +88,8 @@ body {
 
 }
 
+ul#menu li a.ativo { background-color:#F09; }
+
 #menu ul li a:hover {
 
     color: #002a80;
@@ -82,9 +98,13 @@ body {
 
 #footer {
 
+	position: absolute;
+	bottom: 0px;
+    background-color: #E4E4E4;
+	clear: both;
     width: 100%;
-    height: 1px;
-    background-color: #AAA9A9;
+    height: 50px;
+    border-top: 1px solid #c6c6c6;
 
 
 }
@@ -100,7 +120,7 @@ body {
 
 }
 
-h1, h4, p, a {
+h1, p, a {
 
     font-family: 'Crete Round';
     color: #356682;
@@ -110,16 +130,36 @@ h1, h4, p, a {
 
 }
 
+
+h2 {
+	font-family: 'Crete Round';
+	color: #356682;
+	font-size: 2.1em;
+	line-height: 1.2em;
+	margin: 0 0 10px;
+}
+
+h3 {
+	font-family: 'Crete Round';
+	color: #356682;
+	font-size: 1.8em;
+	line-height: 1.2em;
+	margin: 0 0 10px;
+}
+
 h4 {
 
-    font-size: 1.6em;
-    color: black;
+	font-family: 'Crete Round';
+	color: #356682;
+	font-size: 1.5em;
+	line-height: 1.2em;
+	margin: 0 0 10px;
 
 }
 
 p {
 
-    color: #8BA5B4;
+    color: #5f8eb4;
     font-size: 1.375em;
     line-height: 1.25em;
     margin-left: 100px;
@@ -141,6 +181,7 @@ p {
 .box1>p {
 
     margin: 0;
+	text-align: justify;
 
 }
 
@@ -162,6 +203,7 @@ a {
 #content {
 
     width: 970px;
+	padding-bottom: 60px;
     margin: 0 auto;
 
 }
@@ -171,6 +213,7 @@ a {
     width: 880px;
     height: 310px;
     margin: 95px auto;
+    min-height: 400px;
 
 }
 
@@ -228,10 +271,19 @@ a {
 
 .box1 {
 
-    width: 400px;
-    height: 250px;
-    float: left;
-    padding-right: 60px;
+	 width: 400px;
+	 height: 250px;
+	 float: left;
+	 padding-right: 60px;
+
+ }
+
+.box2 {
+
+	width: 960px;
+	height: 100%;
+	float: left;
+	padding-right: 60px;
 
 }
 
