@@ -172,6 +172,8 @@ a {
 #content {
 
     width: 970px;
+	min-height: 50%;
+	max-height: 80%;
     margin: 0 auto;
 
 }
