@@ -2,7 +2,7 @@
 
 
 
-	<a href="index.php" style="position:absolute;">
+	<a href="index.php" style="position:absolute;left:0px;">
 		<img src="../img/logo.png">
 	</a>
 
