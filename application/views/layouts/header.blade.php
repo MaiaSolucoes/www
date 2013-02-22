@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
     </a>
 
-    <a href="index.php" id="link_img">
+    <a href="../" id="link_img">
 		<img src="../img/logo.png">
     </a>
 
