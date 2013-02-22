@@ -88,8 +88,8 @@ ul#menu li a.ativo { background-color:#F09; }
 	position: absolute;
 	bottom: 0px;
 	margin-bottom: 10px;
-    background-color: #E4E4E4;
-
+    /* background-color: #E4E4E4; */
+	background-color: #00ff00;
     clear: both;
     width: 100%;
     height: 50px;
