@@ -27,14 +27,21 @@
 				Estamos envolvidos em transformar a TI (Tecnologia da Informação) em TN (Tecnologia dos Negócios). Para
 				isso, utilizamos boas práticas do mercado e as transmitimos aos nossos clientes na forma de serviço.
 			</p>
+
+		</div>
+
+		<div class="p box1">
+			<h4>Missão, Visão e Valores</h4>
 			<p class="clear">
 				<strong>Missão</strong>
 				<br />
 				Desenvolver soluções inteligentes, maximizando valor para nossos clientes.
+				<br />
 				<strong>Visão</strong>
 				<br />
 				Ser referência no Brasil em qualidade de software, preço baixo e inovação, através do investimento
 				constante em pessoas e novas tecnologias.
+				<br />
 				<strong>Valores</strong>
 				<br />
 				Ter uma conduta ética, honesta e transparente dentro e fora da empresa.
@@ -46,7 +53,6 @@
 				Ter uma política de gestão em equipe.
 
 			</p>
-
 		</div>
 
 	</div>
