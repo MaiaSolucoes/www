@@ -3,7 +3,6 @@
     margin: 0;
 
 }
-body {
 
 * html #all {
 	height: 100%; /* hack for IE6 (height as min-height) */
