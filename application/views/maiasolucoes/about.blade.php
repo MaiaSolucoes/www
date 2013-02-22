@@ -36,12 +36,12 @@
 				<strong>Missão</strong>
 				<br />
 				Desenvolver soluções inteligentes, maximizando valor para nossos clientes.
-				<br />
+				<br /><br />
 				<strong>Visão</strong>
 				<br />
 				Ser referência no Brasil em qualidade de software, preço baixo e inovação, através do investimento
 				constante em pessoas e novas tecnologias.
-				<br />
+				<br /><br />
 				<strong>Valores</strong>
 				<br />
 				Ter uma conduta ética, honesta e transparente dentro e fora da empresa.
