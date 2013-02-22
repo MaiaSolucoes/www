@@ -10,7 +10,7 @@ Termos de Servi&ccedil;os
 
 <div id="box">
 
-	<div class="p box1">
+	<div class="p box2">
 		<h1>Termos de Servi&ccedil;os</h1>
 
 		<p class="clear">
