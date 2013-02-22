@@ -9,6 +9,14 @@ body {
 
 }
 
+#link_img {
+
+	margin-top: 20px;
+	margin-left: 11%;
+	float: left;
+
+}
+
 #header {
 
     height: 140px;
@@ -16,7 +24,7 @@ body {
 
 }
 
-#header img a {
+#header img {
 
     margin-top: 20px;
     margin-left: 11%;
