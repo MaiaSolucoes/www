@@ -81,7 +81,6 @@ ul#menu li a.ativo { background-color:#F09; }
     height: 50px;
     border-top: 1px solid #c6c6c6;
 
-
 }
 
 #inside_footer {
@@ -186,6 +185,7 @@ a {
 #banner {
 
     width: 880px;
+    height: 310px;
     margin: 95px auto;
     min-height: 400px;
 
