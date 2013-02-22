@@ -6,7 +6,7 @@
         <span class="icon-bar"></span>
     </a>
 
-	<img src="../img/logo.png">
+	<a href="http://www.maiasolucoes.com.br/"><img src="../img/logo.png"></a>
 
     <div class="nav-collapse collapse" id="menu">
 
