@@ -1,4 +1,4 @@
-<div class="footer" style="border-top: 1px solid #c6c6c6;" id="footer">
+<div class="footer" style="border-top: 1px solid #c6c6c6;">
 
     <!-- <div class="social">
         Mantenha contato<br>
