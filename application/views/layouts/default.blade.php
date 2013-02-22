@@ -20,18 +20,19 @@
 </head>
 
 <body>
+	<div id="all">
+		@include('layouts/header')
 
-	@include('layouts/header')
+		<div id="content">
 
-	<div id="content">
+			@yield('banner')
 
-		@yield('banner')
+			@yield('content')
 
-        @yield('content')
-
-	</div>
-	<div id="footer">
-		@include('layouts/footer')
+		</div>
+		<div id="footer">
+			@include('layouts/footer')
+		</div>
 	</div>
     {{ Asset::container('bootstrapper')->scripts(); }}
 

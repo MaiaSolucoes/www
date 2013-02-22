@@ -3,9 +3,19 @@
     margin: 0;
 
 }
+
+* html #all {
+	height: 100%; /* hack for IE6 (height as min-height) */
+}
 body {
 
     background-color: #E4E4E4;
+
+}
+
+#all {
+
+	position: relative;
 
 }
 
