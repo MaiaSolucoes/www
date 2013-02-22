@@ -55,8 +55,8 @@ Solu&ccedil;&otilde;es
 		<h4>Aumente sua presença</h4>
 		<p class="clear">
 			Esteja online 24 horas por dia, 7 dias por semana e exponha o seu negócio na Internet. Temos uma
-			ferramenta simples o suficiente para ser usada por leigos e que permite construir seu site em minutos.
-			Se desejar, temos soluções personalizadas para vendas online, tudo integrado com as ferramentas que
+			ferramenta simples que permite construir seu site em minutos.
+			Se desejar, temos soluções personalizadas para vendas online, tudo integrado com todas as ferramentas que
 			disponibilizamos.
 		</p>
 
