@@ -25,11 +25,8 @@
 
         @yield('link_select')
 
-		@include('layouts/header')
 		
 		<div id="content">
-
-			@yield('banner')
 
 			@yield('content')
 
