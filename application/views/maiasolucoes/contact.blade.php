@@ -6,6 +6,12 @@
 
 @endsection
 
+@section('link_select')
+
+<?php $link = 'contact';?>
+
+@endsection
+
 @section('content')
 
     <div id="contact_area">
