@@ -28,7 +28,7 @@
 
                 <div class="alert alert-error">
                     <a class="close" data-dismiss="alert" href="#">&times;</a>
-                    <b>Mensagem de erro(erro ao inserir no banco)</b>
+                    <b>Erro na inser&ccedil;&atilde;o no banco de dados.</b>
                 </div>
 
             @endif
@@ -37,7 +37,7 @@
 
                 <div class="alert alert-success">
                     <a class="close" data-dismiss="alert" href="#">&times;</a>
-                    <b>Mensagem de sucesso(inserida no banco).</b>
+                    <b>Email enviado com sucesso.</b>
                 </div>
 
             @endif
