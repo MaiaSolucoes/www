@@ -18,6 +18,10 @@ Solu&ccedil;&otilde;es
 			competitiva e capaz de tomar decisões com mais velocidade. Nossa ferramenta de micro-ERP permite
 			armazenar e recuperar todas as informações da sua empresa em um modelo simplificado. Tenha sempre em
 			mãos o controle do seu negócio, seja no trabalho, em casa ou no seu celular.
+			<br />
+			Nós não gostamos de telas de cadastro sem sentido e de sistemas difíceis de se entender. Temos a
+			preocupação de entregar ferramentas realmente úteis e fáceis de se usar. Nossa filosofia é simples:
+			"faça apenas o necessário e bem feito".
 		</p>
 
 	</div>
@@ -31,17 +35,6 @@ Solu&ccedil;&otilde;es
 			real. Envie mensagens de e-mail ou SMS automaticamente (por exemplo, em aniversários ou outras datas
 			importantes). Mantenha contato e veja o que seus clientes dizem dos seus produtos nas redes sociais.
 			Tudo em uma ferramenta simples, direta e elegante.
-		</p>
-
-	</div>
-
-	<div class="p box1">
-
-		<h4>Apenas o necessário</h4>
-		<p class="clear">
-			Nós não gostamos de telas de cadastro sem sentido e de sistemas difíceis de se entender. Temos a
-			preocupação de entregar ferramentas realmente úteis e fáceis de se usar. Nossa filosofia é simples:
-			"faça apenas o necessário e bem feito".
 		</p>
 
 	</div>
