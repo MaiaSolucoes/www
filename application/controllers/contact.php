@@ -21,6 +21,7 @@ class Contact_Controller extends Base_Controller {
 
         $validate = Validator::make($input,$this->roles);
 
+        $ip = getenv('REMOTE_ADDR');
 
         if($validate->passes()) {
 
@@ -28,6 +29,7 @@ class Contact_Controller extends Base_Controller {
             $contact->name = $input['name'];
             $contact->email = $input['email'];
             $contact->message = $input['message'];
+            $contact->ip = $_SERVER['REMOTE_ADDR'];
             $contact->save();
 
             if($contact->save() == 1) {
