@@ -323,6 +323,16 @@ a {
 
 }
 
+.login {
+
+    position: absolute;
+    left: 65%;
+    font-family: 'Belgrano', serif;
+    color: rgb(53, 102, 130);
+    margin-top: 20px;
+
+}
+
 .terms {
 
     position: absolute;
