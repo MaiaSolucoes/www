@@ -56,7 +56,6 @@
 
         {{ $messages->links() }}
 
-
     </div>
 
     <br><br><br><br><br><br><br><br>

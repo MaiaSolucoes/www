@@ -31,13 +31,21 @@
 |
 */
 
+
+
 Route::controller(Controller::detect());
+
 
 Route::get('/', function() {
 
     Asset::add('style', 'css/style.css');
     return View::make('maiasolucoes.index');
-    
+
+});
+
+Route::get('page/(:any?)', function($page = '')
+{
+//
 });
 
 /*
