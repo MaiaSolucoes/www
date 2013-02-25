@@ -6,6 +6,12 @@
 
 @endsection
 
+@section('link_select')
+
+<?php $link = '';?>
+
+@endsection
+
 @section('banner')
 
     @section('logout')

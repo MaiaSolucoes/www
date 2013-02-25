@@ -6,6 +6,12 @@
 
 @endsection
 
+@section('link_select')
+
+<?php $link = 'solutions';?>
+
+@endsection
+
 @section('content')
 
 	<div id="box">

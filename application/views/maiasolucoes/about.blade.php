@@ -6,9 +6,13 @@
 
 @endsection
 
-@section('content')
+@section('link_select')
 
     <?php $link = 'about';?>
+
+@endsection
+
+@section('content')
 
 	<div id="box">
 
