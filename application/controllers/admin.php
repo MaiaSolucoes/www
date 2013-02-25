@@ -6,7 +6,6 @@ class Admin_Controller extends Base_Controller {
 
         if(Auth::check()) {
 
-            //$page = Session::get('page');
             return Redirect::to('../admin/contacts')->with('auth', 'true');
 
         }
@@ -53,15 +52,9 @@ class Admin_Controller extends Base_Controller {
 
         }
         $per_page = 5;
-        //$page = Session::get('page');
         $messages = DB::table('contacts')->paginate($per_page, array('id', 'name','email','message', 'created_at'));
 
-        //dd($messages->results);
-        //$orders = DB::table('orders')->paginate($per_page);
-        //$messages = Contact::all();
-
 		return View::make('admin.contacts')->with(array('messages' => $messages,'page' => $page));
-
 
     }
 
