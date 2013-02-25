@@ -31,10 +31,7 @@
 |
 */
 
-
-
 Route::controller(Controller::detect());
-
 
 Route::get('/', function() {
 
