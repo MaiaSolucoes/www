@@ -79,7 +79,7 @@ html, body {
 #menu ul li a {
 
     padding: 2px 15px;
-    font-family: 'Crete Round', Arial;
+    font-family: 'Belgrano', serif;
     font-size: 22px;
     color: #7D818C;
     text-transform: uppercase;
@@ -121,7 +121,7 @@ ul#menu li a.ativo { background-color:#F09; }
 
 h1, p, a {
 
-    font-family: 'Crete Round';
+    font-family: 'Belgrano', serif;
     color: #356682;
     font-size: 2.3em;
     line-height: 1.2em;
@@ -131,7 +131,7 @@ h1, p, a {
 
 
 h2 {
-	font-family: 'Crete Round';
+    font-family: 'Belgrano', serif;
 	color: #356682;
 	font-size: 2.1em;
 	line-height: 1.2em;
@@ -139,7 +139,7 @@ h2 {
 }
 
 h3 {
-	font-family: 'Crete Round';
+    font-family: 'Belgrano', serif;
 	color: #356682;
 	font-size: 1.8em;
 	line-height: 1.2em;
@@ -148,7 +148,7 @@ h3 {
 
 h4 {
 
-	font-family: 'Crete Round';
+    font-family: 'Belgrano', serif;
 	color: #356682;
 	font-size: 1.5em;
 	line-height: 1.2em;
@@ -306,7 +306,7 @@ a {
 .social ul li {
 
     display: inline;
-    font-family: 'Crete Round';
+    font-family: 'Belgrano', serif;
     color: rgb(53, 102, 130);
 
 }
@@ -318,7 +318,7 @@ a {
     margin-left: -126px;
     margin-top: 20px;
     padding-bottom: 10px;
-    font-family: 'Crete Round';
+    font-family: 'Belgrano', serif;
     color: rgb(53, 102, 130);
 
 }
@@ -328,7 +328,7 @@ a {
     position: absolute;
     left: 75%;
     margin-top: 23px;
-    font-family: 'Crete Round';
+    font-family: 'Belgrano', serif;
     color: rgb(53, 102, 130);
 
 }
