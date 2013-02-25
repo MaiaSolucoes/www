@@ -43,7 +43,7 @@ Route::get('/', function() {
 
 });
 
-Route::get('page/(:any?)', function($page = '')
+Route::get('admin/contacts/(:any?)', function($page)
 {
 //
 });

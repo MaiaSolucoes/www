@@ -55,14 +55,13 @@ class Admin_Controller extends Base_Controller {
         $per_page = 5;
         //$page = Session::get('page');
         $messages = DB::table('contacts')->paginate($per_page, array('id', 'name','email','message', 'created_at'));
+
         //dd($messages->results);
         //$orders = DB::table('orders')->paginate($per_page);
         //$messages = Contact::all();
-        $auth = Session::get('auth');
 
-        return $auth == true
-            ? View::make('admin.contacts')->with(array('messages' => $messages,'page' => $page))
-            : Redirect::to('../admin')->with('result', '1');
+		View::make('admin.contacts')->with(array('messages' => $messages,'page' => $page));
+
 
     }
 
