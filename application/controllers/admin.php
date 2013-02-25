@@ -52,7 +52,10 @@ class Admin_Controller extends Base_Controller {
 
         }
 
-        $messages = Contact::all();
+        $per_page = 5;
+        $messages = DB::table('contacts')->paginate($per_page, array('id', 'name','email','message', 'created_at'));
+        //$orders = DB::table('orders')->paginate($per_page);
+        //$messages = Contact::all();
         $auth = Session::get('auth');
 
         return $auth == true

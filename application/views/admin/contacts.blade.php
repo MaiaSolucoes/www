@@ -33,7 +33,7 @@
             <th>Email</th>
             <th>Mensagem</th>
 
-            @forelse($messages as $valor)
+            @forelse($messages->results as $valor)
 
                 <tr>
                     <td>{{ $valor->name }}</td>
@@ -53,6 +53,9 @@
             @endforelse
 
         </table>
+
+        {{ $messages->links() }}
+
 
     </div>
 
