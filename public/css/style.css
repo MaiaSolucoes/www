@@ -56,7 +56,7 @@ body {
 #menu ul li a {
 
     padding: 2px 15px;
-    font-family: 'Crete Round', Arial;
+    font-family: 'Belgrano', Arial;
     font-size: 22px;
     color: #7D818C;
     text-transform: uppercase;
@@ -93,7 +93,7 @@ ul#menu li a.ativo { background-color:#F09; }
 
 h1, h4, p, a {
 
-    font-family: 'Crete Round';
+    font-family: 'Belgrano';
     color: #356682;
     font-size: 2.3em;
     line-height: 1.2em;
@@ -244,7 +244,7 @@ a {
 .social ul li {
 
     display: inline;
-    font-family: 'Crete Round';
+    font-family: 'Belgrano';
     color: rgb(53, 102, 130);
 
 }
@@ -256,7 +256,7 @@ a {
     margin-left: -126px;
     margin-top: 20px;
     padding-bottom: 10px;
-    font-family: 'Crete Round';
+    font-family: 'Belgrano';
     color: rgb(53, 102, 130);
 
 }
@@ -266,7 +266,7 @@ a {
     position:absolute;
     left:75%;
     margin-top: 23px;
-    font-family: 'Crete Round';
+    font-family: 'Belgrano';
     color: rgb(53, 102, 130);
 
 }
