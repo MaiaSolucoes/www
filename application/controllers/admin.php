@@ -60,7 +60,7 @@ class Admin_Controller extends Base_Controller {
         //$orders = DB::table('orders')->paginate($per_page);
         //$messages = Contact::all();
 
-		View::make('admin.contacts')->with(array('messages' => $messages,'page' => $page));
+		return View::make('admin.contacts')->with(array('messages' => $messages,'page' => $page));
 
 
     }
