@@ -332,3 +332,7 @@ a {
     color: rgb(53, 102, 130);
 
 }
+
+.table-font-small {
+	font-size: 11px;
+}

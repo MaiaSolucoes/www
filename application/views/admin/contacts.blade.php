@@ -28,7 +28,7 @@
 
     <div class="container">
 
-        <table class="table table-hover" style="font-size: 11px">
+        <table class="table table-hover table-font-small">
             <th>Nome</th>
             <th>Email</th>
             <th>Mensagem</th>
