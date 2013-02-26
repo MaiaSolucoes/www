@@ -29,11 +29,11 @@
     <div class="container">
 
         <table class="table table-hover table-font-small">
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Mensagem</th>
-            <th>IP</th>
-            <th>Data/Hora</th>
+            <th style="width: 150px">Nome</th>
+            <th style="width: 250px">Email</th>
+            <th style="width: 400px">Mensagem</th>
+            <th style="width: 100px">IP</th>
+            <th style="width: 100px">Data/Hora</th>
 
             @forelse($messages->results as $valor)
 
