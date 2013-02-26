@@ -28,17 +28,32 @@
 
     <div class="container">
 
-        <table class="table table-hover pull-left">
+        <table class="table table-hover" style="font-size: 11px">
             <th>Nome</th>
             <th>Email</th>
             <th>Mensagem</th>
+            <th>IP</th>
+            <th>Data/Hora</th>
 
             @forelse($messages->results as $valor)
+
+            <script type="text/javascript">
+                var nome;
+                function apagarCampos(nome) {
+                    var tipo = nome.elements;
+                    var i;
+                    for(i=0;i< tipo.length;i++){
+                        if(tipo[i].type =='text'){
+                            tipo[i].value = "";
+                        }   }   }
+            </script>
 
                 <tr>
                     <td>{{ $valor->name }}</td>
                     <td>{{ $valor->email }}</td>
-                    <td>{{ $valor->message }}</td>
+                    <td onclick='apagarCampos();'>{{ Str::limit($valor->message, 100) }}</td>
+                    <td>{{ $valor->ip }}</td>
+                    <td>{{ $valor->created_at }}</td>
                 </tr>
 
             @empty
