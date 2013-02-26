@@ -40,7 +40,7 @@
                 <tr>
                     <td>{{ $valor->name }}</td>
                     <td>{{ $valor->email }}</td>
-                    <td>{{ Str::limit($valor->message, 2048) }}</td>
+                    <td>{{ wordwrap(Str::limit($valor->message, 2048), 80, "<br />\n") }}</td>
                     <td>{{ $valor->ip }}</td>
                     <td>{{ $valor->created_at }}</td>
                 </tr>
