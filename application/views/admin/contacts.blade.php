@@ -37,21 +37,10 @@
 
             @forelse($messages->results as $valor)
 
-            <script type="text/javascript">
-                var nome;
-                function apagarCampos(nome) {
-                    var tipo = nome.elements;
-                    var i;
-                    for(i=0;i< tipo.length;i++){
-                        if(tipo[i].type =='text'){
-                            tipo[i].value = "";
-                        }   }   }
-            </script>
-
                 <tr>
                     <td>{{ $valor->name }}</td>
                     <td>{{ $valor->email }}</td>
-                    <td onclick='apagarCampos();'>{{ Str::limit($valor->message, 100) }}</td>
+                    <td>{{ Str::limit($valor->message, 2048) }}</td>
                     <td>{{ $valor->ip }}</td>
                     <td>{{ $valor->created_at }}</td>
                 </tr>
