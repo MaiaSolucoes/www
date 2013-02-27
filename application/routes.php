@@ -37,7 +37,7 @@ Route::get('/', function() {
 
     Asset::add('style', 'css/style.css');
     return View::make('maiasolucoes.index');
-    
+
 });
 
 /*
