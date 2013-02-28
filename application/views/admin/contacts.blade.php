@@ -28,17 +28,21 @@
 
     <div class="container">
 
-        <table class="table table-hover pull-left">
-            <th>Nome</th>
-            <th>Email</th>
-            <th>Mensagem</th>
+        <table class="table table-hover table-font-small">
+            <th style="width: 150px">Nome</th>
+            <th style="width: 250px">Email</th>
+            <th style="width: 350px">Mensagem</th>
+            <th style="width: 100px">IP</th>
+            <th style="width: 110px">Data/Hora</th>
 
             @forelse($messages->results as $valor)
 
                 <tr>
                     <td>{{ $valor->name }}</td>
                     <td>{{ $valor->email }}</td>
-                    <td>{{ $valor->message }}</td>
+                    <td>{{ wordwrap(Str::limit($valor->message, 2048), 80, "<br />\n", true) }}</td>
+                    <td>{{ $valor->ip }}</td>
+                    <td>{{ $valor->created_at }}</td>
                 </tr>
 
             @empty
