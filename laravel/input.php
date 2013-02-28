@@ -27,11 +27,6 @@ class Input {
 
 		unset($input[Request::spoofer]);
 
-
-		$html = new \HTMLPurifier();
-
-		$input = $html->purifyArray($input);
-
 		return $input;
 	}
 
@@ -80,10 +75,6 @@ class Input {
 		{
 			return array_get(static::query(), $key, $default);
 		}
-
-		$html = new \HTMLPurifier();
-
-		$value = $html->purify($value);
 
 		return $value;
 	}
