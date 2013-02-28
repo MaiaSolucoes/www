@@ -17,11 +17,9 @@ class Contact_Controller extends Base_Controller {
 
     public function action_process() {
 
-        $input = HTMLPurifier::clean( Input::all());
+        $input = Input::all();
 
         $validate = Validator::make($input,$this->roles);
-
-        $ip = getenv('REMOTE_ADDR');
 
         if($validate->passes()) {
 
@@ -30,7 +28,6 @@ class Contact_Controller extends Base_Controller {
             $contact->email = $input['email'];
             $contact->message = $input['message'];
             $contact->ip = $_SERVER['REMOTE_ADDR'];
-            //$new_data = HTMLPurifier::clean($input = Input::all());
 
             $contact->save();
 
