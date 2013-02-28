@@ -51,8 +51,8 @@ class Admin_Controller extends Base_Controller {
             return Redirect::to('../admin');
 
         }
-        $per_page = 5;
-        $messages = DB::table('contacts')->paginate($per_page, array('id', 'name','email','message', 'created_at'));
+        $per_page = 15;
+        $messages = DB::table('contacts')->paginate($per_page, array('id', 'name','email','message','ip', 'created_at'));
 
 		return View::make('admin.contacts')->with(array('messages' => $messages,'page' => $page));
 

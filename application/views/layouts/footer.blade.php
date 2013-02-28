@@ -13,6 +13,12 @@
 
 </div>
 
+<div class="login">
+
+    <a href="<?php echo URL::base(); ?>/admin">Login</a>
+
+</div>
+
 <div class="terms">
 
 	<a href="/terms">Termos de Servi&ccedil;os</a>
