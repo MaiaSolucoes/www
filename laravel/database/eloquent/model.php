@@ -363,6 +363,13 @@ abstract class Model {
 	{
 		if ( ! $this->dirty()) return true;
 
+		/**
+		 *
+		 * PATCH TO HTMLPURIFIER
+		 *
+		 **/
+		$this->attributes = \Sanitize::purify($this->attributes);
+
 		if (static::$timestamps)
 		{
 			$this->timestamp();

@@ -2,4 +2,6 @@
 
 class Contact extends Eloquent {
 
+
+
 }
