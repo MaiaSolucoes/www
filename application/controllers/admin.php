@@ -16,10 +16,6 @@ class Admin_Controller extends Base_Controller {
 
 	public function action_login() {
 
-        $url = file_get_contents('http://pul.maia.maiasolucoes.com.br/user/user?id=1');
-        dd($url);
-
-
         $input = Input::all();
 
         if(empty($input)) {
@@ -33,8 +29,16 @@ class Admin_Controller extends Base_Controller {
             return Redirect::to('../admin');
 
         } else {
+            $input['email'] = 'maiams@msn.com';
+            $input['password'] = 'ahseeutepego1';
 
-            if(Auth::attempt(array ('username'=> $input['email'], 'password'=> $input['password'])) ){
+
+            $url = file_get_contents("http://pul.maia.maiasolucoes.com.br/auth/login?username=$input[email]&password=$input[password]");
+            $json = json_decode($url);
+            dd($json);
+
+
+            /*if(Auth::attempt(array ('username'=> $input['email'], 'password'=> $input['password'])) ){
 
                 return Redirect::to('../admin/contacts')->with('auth', 'true');
 
@@ -42,7 +46,7 @@ class Admin_Controller extends Base_Controller {
 
                 return Redirect::to('../admin')->with('result', '1');
 
-            }
+            }*/
 
         }
 
