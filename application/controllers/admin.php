@@ -60,7 +60,10 @@ class Admin_Controller extends Base_Controller {
 
 	public function action_logout() {
 
-		Auth::logout();
+        $logout = Auth::attempt('username');
+        dd($logout);
+        $url = file_get_contentshttp("pul.maia.maiasolucoes.com.br/auth/logout?username=$logout");
+        dd($url);
 		return Redirect::to('../admin');
 
 	}
