@@ -16,7 +16,11 @@ class Admin_Controller extends Base_Controller {
 
 	public function action_login() {
 
-		$input = Input::all();
+        $url = file_get_contents('http://pul.maia.maiasolucoes.com.br/user/user?id=1');
+        dd($url);
+
+
+        $input = Input::all();
 
         if(empty($input)) {
 
