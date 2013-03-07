@@ -30,7 +30,8 @@ class Response
      */
     public function __construct($body, $headers, Request $request)
     {
-        $this->request      = $request;
+        require_once 'Response/Headers.php';
+		$this->request      = $request;
         $this->raw_headers  = $headers;
         $this->raw_body     = $body;
 

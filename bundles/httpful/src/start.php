@@ -33,3 +33,5 @@ foreach ($handlers as $mime => $handler) {
 }
 
 class_alias('Httpful\Request', 'Httpful');
+
+\Httpful\Bootstrap::init();
