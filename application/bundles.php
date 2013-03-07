@@ -38,5 +38,6 @@ return array(
 	'docs' => array('handles' => 'docs'),
 	'bootstrapper' => array('auto' => true),
 	'laravel-htmlpurifier' => array('auto' => true),
+	'httpful' => array('auto' => true),
 
 );
