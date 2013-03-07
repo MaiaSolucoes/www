@@ -29,13 +29,13 @@ class Admin_Controller extends Base_Controller {
             return Redirect::to('../admin');
 
         } else {
-            $input['email'] = 'maiams@msn.com';
-            $input['password'] = 'ahseeutepego1';
+            /*$input['email'] = 'maiams@msn.com';
+            $input['password'] = 'ahseeutepego1';*/
 
 
-            $url = file_get_contents("http://pul.maia.maiasolucoes.com.br/auth/login?username=$input[email]&password=$input[password]");
-            $json = json_decode($url);
-            dd($json);
+            $url = file_get_contents("http://pul.cicero.maiasolucoes.com.br/auth/login?username=$input[email]&password=$input[password]");
+            $auth = json_decode($url);
+            $auth == 'verdade' ? print '<br>autenticado<br>' : print '<br>nao autenticado<br>' ;
 
 
             /*if(Auth::attempt(array ('username'=> $input['email'], 'password'=> $input['password'])) ){
