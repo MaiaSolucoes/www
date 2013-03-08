@@ -16,7 +16,7 @@ class Admin_Controller extends Base_Controller {
 
 	public function action_login() {
 
-		$input = Input::all();
+        $input = Input::all();
 
         if(empty($input)) {
 
@@ -29,8 +29,16 @@ class Admin_Controller extends Base_Controller {
             return Redirect::to('../admin');
 
         } else {
+            /*$input['email'] = 'maiams@msn.com';
+            $input['password'] = 'ahseeutepego1';*/
 
-            if(Auth::attempt(array ('username'=> $input['email'], 'password'=> $input['password'])) ){
+
+            $url = file_get_contents("http://pul.cicero.maiasolucoes.com.br/auth/login?username=$input[email]&password=$input[password]");
+            $auth = json_decode($url);
+            $auth == 'verdade' ? print '<br>autenticado<br>' : print '<br>nao autenticado<br>' ;
+
+
+            /*if(Auth::attempt(array ('username'=> $input['email'], 'password'=> $input['password'])) ){
 
                 return Redirect::to('../admin/contacts')->with('auth', 'true');
 
@@ -38,7 +46,7 @@ class Admin_Controller extends Base_Controller {
 
                 return Redirect::to('../admin')->with('result', '1');
 
-            }
+            }*/
 
         }
 
