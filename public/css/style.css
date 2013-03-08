@@ -40,21 +40,14 @@ html, body {
 
 #header img {
 
-    margin-top: 20px;
-    margin-left: 11%;
+	margin: 0 auto;
     float: left;
-
-}
-
-#header div {
-
-    margin-right: 140px;
 
 }
 
 #menu {
 
-    margin-top: 90px;
+    margin: 90px auto;
     float:right;
 
 }
@@ -108,24 +101,13 @@ ul#menu li a.ativo { background-color:#F09; }
 
 }
 
-#inside_footer {
-
-    width: 980px;
-    margin: 0 auto;
-    height: 30px;
-    font-family: Arial;
-    color: #AAA9A9;
-    padding-top: 10px;
-
-}
-
 h1, p, a {
 
     font-family: 'Belgrano', serif;
     color: #356682;
     font-size: 2.3em;
     line-height: 1.2em;
-    margin: 0 0 10px;
+    margin: 0 0 10px 0px;
 
 }
 
@@ -201,7 +183,7 @@ a {
 
 #content {
 
-    width: 970px;
+    width: 90%;
 	padding-bottom: 60px;
     margin: 0 auto;
 
@@ -218,7 +200,7 @@ a {
 
 #arrow {
 
-    margin: 60px -30px 0 0;
+    margin: -50 -130 auto;
     float: left;
 
 }

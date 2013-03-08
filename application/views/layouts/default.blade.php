@@ -26,7 +26,9 @@
 
 <body>
 <div id="all">
-	@include('layouts/header')
+	<div class="navbar" id="header">
+		@include('layouts/header')
+	</div>
 
 	<div id="content">
 
