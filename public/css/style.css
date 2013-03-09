@@ -1,3 +1,5 @@
+/*
+
 * {
 
     margin: 0;
@@ -5,11 +7,11 @@
 }
 
 * html #all {
-	height: 100%; /* hack for IE6 (height as min-height) */
+	height: 100%;  hack for IE6 (height as min-height)
 }
 html, body {
 
-    background-color: #E4E4E4;
+    background-color: #FEFEFF;
 	height: 100%;
 
 }
@@ -17,7 +19,6 @@ html, body {
 #link_img {
 
 	margin-top: 20px;
-	margin-left: 11%;
 	float: left;
 
 }
@@ -31,9 +32,16 @@ html, body {
 
 }
 
+#login {
+
+    float:right;
+    margin-top: -30px;
+
+}
 #header {
 
     height: 140px;
+    width: 970px;;
     margin: 0 auto;
 
 }
@@ -46,16 +54,11 @@ html, body {
 
 }
 
-#header div {
-
-    margin-right: 140px;
-
-}
-
 #menu {
 
-    margin-top: 90px;
-    float:right;
+    margin-top: 110px;
+    margin-left: 50px;
+    float:left;
 
 }
 
@@ -66,6 +69,7 @@ html, body {
     float: right;
     width: 100%;
     list-style: none;
+    horizontal-align: baseline;
 
 }
 
@@ -108,14 +112,36 @@ ul#menu li a.ativo { background-color:#F09; }
 
 }
 
-#inside_footer {
+.copyright {
 
-    width: 980px;
-    margin: 0 auto;
-    height: 30px;
-    font-family: Arial;
-    color: #AAA9A9;
-    padding-top: 10px;
+    width: 300px;
+    position: absolute;
+    left: 43%;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    font-family: 'Belgrano', serif;
+    color: #356682;
+
+}
+
+.login {
+
+    width: 80px;
+    position: absolute;
+    left: 65%;
+    font-family: 'Belgrano', serif;
+    color: #356682;
+    margin-top: 20px;
+
+}
+
+.terms {
+
+    position: absolute;
+    left: 75%;
+    margin-top: 20px;
+    font-family: 'Belgrano', serif;
+    color: #356682;
 
 }
 
@@ -218,7 +244,8 @@ a {
 
 #arrow {
 
-    margin: 60px -30px 0 0;
+    margin: 20px -30px 0 0;
+    margin: 20px -30px 0 0;
     float: left;
 
 }
@@ -286,7 +313,7 @@ a {
 
 }
 
-/* Footer */
+
 .social {
 
     position: absolute;
@@ -311,40 +338,12 @@ a {
 
 }
 
-.copyright {
 
-    position: absolute;
-    left: 50%;
-    margin-left: -126px;
-    margin-top: 20px;
-    padding-bottom: 10px;
-    font-family: 'Belgrano', serif;
-    color: rgb(53, 102, 130);
-
-}
-
-.login {
-
-    position: absolute;
-    left: 65%;
-    font-family: 'Belgrano', serif;
-    color: rgb(53, 102, 130);
-    margin-top: 20px;
-
-}
-
-.terms {
-
-    position: absolute;
-    left: 75%;
-    margin-top: 23px;
-    font-family: 'Belgrano', serif;
-    color: rgb(53, 102, 130);
-
-}
 
 .table-font-small {
 
 	font-size: 11px;
 
 }
+
+*/

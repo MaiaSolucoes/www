@@ -14,17 +14,24 @@
 
 @section('banner')
 
-	
-	<img src="img/arrow.png" id="arrow">
+    <div class="row" style="background-color: #f8b9b7;">
 
-	<div id="banner">
+        <div class="row">
 
-		<h1>Temos uma única paixão:<br>
-		Ajudar nossos clientes a desenvolver seu potencial</h1>
-		<br />
-		<p class="sentence_index">Nós fazemos isso criando soluções intuitivas e que funcionam de verdade.</p>
-        <a href="solutions">Saiba Mais »</a>
+            <img src="img/arrow.png" class="span1">
 
-	</div>
+            <div class="span9">
+
+                <h1>Temos uma única paixão:<br>
+                    Ajudar nossos clientes a desenvolver seu potencial</h1>
+                    <br />
+                    <p class="">Nós fazemos isso criando soluções intuitivas e que funcionam de verdade.</p>
+                    <a href="solutions">Saiba Mais »</a>
+
+                </div>
+
+            </div>
+
+        </div>
 
 @endsection
