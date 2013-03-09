@@ -14,7 +14,7 @@
 
 @section('banner')
 
-    <div class="row" style="background-color: #f8b9b7;">
+    <div class="row offset1 downset1">
 
         <div class="row">
 
@@ -22,11 +22,11 @@
 
             <div class="span9">
 
-                <h1>Temos uma única paixão:<br>
-                    Ajudar nossos clientes a desenvolver seu potencial</h1>
-                    <br />
-                    <p class="">Nós fazemos isso criando soluções intuitivas e que funcionam de verdade.</p>
-                    <a href="solutions">Saiba Mais »</a>
+                <h1>Temos uma única paixão:</h1>
+                <h1>Ajudar nossos clientes a desenvolver seu potencial</h1>
+                <br />
+                <p class="offset1">Nós fazemos isso criando soluções intuitivas e que funcionam de verdade.</p>
+                <a href="solutions" class="offset5">Saiba Mais »</a>
 
                 </div>
 
