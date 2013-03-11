@@ -18,20 +18,21 @@
 
         <div class="row">
 
-            <img src="img/arrow.png" class="span1">
-
             <div class="span9">
 
-                <h1>Temos uma única paixão:</h1>
-                <h1>Ajudar nossos clientes a desenvolver seu potencial</h1>
+                <h2>Temos uma única paixão:</h2>
+                <h2>Ajudar nossos clientes a desenvolver seu potencial</h2>
                 <br />
-                <p class="offset1">Nós fazemos isso criando soluções intuitivas e que funcionam de verdade.</p>
-                <a href="solutions" class="offset5">Saiba Mais »</a>
-
+                <div class="span1">
+                    <img src="img/arrow.png">
                 </div>
+                <h4 class="offset1">Nós fazemos isso criando soluções intuitivas e que funcionam de verdade.</h4>
+                <a href="solutions" class="offset5">Saiba Mais »</a>
 
             </div>
 
         </div>
+
+    </div>
 
 @endsection

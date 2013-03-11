@@ -12,6 +12,15 @@
 
 @endsection
 
+@section('script')
+<script type="text/javascript">
+    $(function () {
+        $('.alert').alert('close');
+    });
+
+</script>
+@endsection
+
 @section('content')
 
 <div class="row offset1 downset1">

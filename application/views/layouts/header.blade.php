@@ -2,7 +2,7 @@
     <div class="span3">
         <a href="<?php echo URL::base(); ?>" id="link_img"><img src="<?php echo URL::base(); ?>/img/logo.png"></a>
     </div>
-    <div class="offset1 span4 downset1">
+    <div class="offset1 span6 downset1">
         <ul class="nav nav-pills">
             <li><a href="<?php echo URL::base(); ?>/" <?php if($link == 'main') {echo 'style="color: #000"';} ?>>Principal</a></li>
             <li><a href="<?php echo URL::base(); ?>/about" <?php if($link == 'about') {echo 'style="color: #000"';} ?>>Sobre Nós</a></li>
