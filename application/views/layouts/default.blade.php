@@ -20,44 +20,45 @@
 </head>
 
 <body>
-<div class="container">
+<div id="all">
+    <div class="container">
 
-    <div class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="nav-collapse collapse">
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="nav-collapse collapse">
 
-                    @if(Auth::check())
-                    <div class="brand">
-                        Bem vindo, {{ Auth::user()->email }} {{ HTML::link('../admin/logout','Logout') }}
-                    </div>
-                    @endif
-                    @if(!Auth::check())
-                        {{ Form::open(URL::to('../admin/login'), 'POST', array('class'=>'navbar-form pull-right')) }}
-                            {{ Form::text('email', '', array('class'=>'span3', 'style' => 'height: 30px;', 'placeholder="Login uhul"')) }}
-                            {{ Form::password('password',array('class'=>'span3', 'style' => 'height: 30px;', 'placeholder="Senha uhul"')) }}
-                            {{ Form::submit('Entrar', array('class'=>'btn btn-inverse')) }}
-                        {{ Form::close() }}
-                    @endif
+                        @if(Auth::check())
+                        <div class="brand">
+                            Bem vindo, {{ Auth::user()->email }} {{ HTML::link('../admin/logout','Logout') }}
+                        </div>
+                        @endif
+                        @if(!Auth::check())
+                            {{ Form::open(URL::to('../admin/login'), 'POST', array('class'=>'navbar-form pull-right')) }}
+                                {{ Form::text('email', '', array('class'=>'span3', 'style' => 'height: 30px;', 'placeholder="Login uhul"')) }}
+                                {{ Form::password('password',array('class'=>'span3', 'style' => 'height: 30px;', 'placeholder="Senha uhul"')) }}
+                                {{ Form::submit('Entrar', array('class'=>'btn btn-inverse')) }}
+                            {{ Form::close() }}
+                        @endif
 
-                </div><!--/.nav-collapse -->
+                    </div><!--/.nav-collapse -->
+                </div>
             </div>
         </div>
+
+        @include('layouts/header')
+
+        @yield('banner')
+
+        @yield('content')
+
+        @include('layouts/footer')
     </div>
-
-    @include('layouts/header')
-
-    @yield('banner')
-
-    @yield('content')
-
-    @include('layouts/footer')
-
 </div>
 
 {{ Asset::container('bootstrapper')->scripts(); }}
