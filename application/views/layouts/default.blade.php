@@ -39,9 +39,9 @@
                     @endif
                     @if(!Auth::check())
                         {{ Form::open(URL::to('../admin/login'), 'POST', array('class'=>'navbar-form pull-right')) }}
-                            <input class="span3" type="text" placeholder="Email" style="height: 30px">
-                            <input class="span2" type="password" placeholder="Senha" style="height: 30px">
-                            <button type="submit" class="btn">Entrar</button>
+                            {{ Form::text('email', '', array('class'=>'span3', 'style' => 'height: 30px;', 'placeholder="Login uhul"')) }}
+                            {{ Form::password('password',array('class'=>'span3', 'style' => 'height: 30px;', 'placeholder="Senha uhul"')) }}
+                            {{ Form::submit('Entrar', array('class'=>'btn btn-inverse')) }}
                         {{ Form::close() }}
                     @endif
 
