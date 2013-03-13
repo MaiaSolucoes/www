@@ -38,5 +38,5 @@ return array(
 	'docs' => array('handles' => 'docs'),
 	'bootstrapper' => array('auto' => true),
 	'laravel-htmlpurifier' => array('auto' => true),
-
+    'pulsar' => array('auto' => true),
 );

@@ -31,28 +31,16 @@ class Admin_Controller extends Base_Controller {
         } else {
             /*$input['email'] = 'maiams@msn.com';
             $input['password'] = 'ahseeutepego1';*/
+            $token = Pulsar::login(array('username' => $input['email'], 'password' => $input['password']));
+            dd($token);
 
-
-            $url = file_get_contents("http://pul.cicero.maiasolucoes.com.br/auth/login?username=$input[email]&password=$input[password]");
-            $auth = json_decode($url);
-            $auth == 'verdade' ? print '<br>autenticado<br>' : print '<br>nao autenticado<br>' ;
-
-
-            /*if(Auth::attempt(array ('username'=> $input['email'], 'password'=> $input['password'])) ){
-
-                return Redirect::to('../admin/contacts')->with('auth', 'true');
-
-            } else {
-
-                return Redirect::to('../admin')->with('result', '1');
-
-            }*/
 
         }
 
 	}
 
     public function action_contacts($page=1) {
+
 
         if(!Auth::check()) {
 
