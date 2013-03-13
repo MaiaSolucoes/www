@@ -4,7 +4,7 @@ class Admin_Controller extends Base_Controller {
 
 	public function action_index() {
 
-        if(Auth::check()) {
+        if(Pulsar::check()) {
 
             return Redirect::to('../admin/contacts')->with('auth', 'true');
 
@@ -20,22 +20,21 @@ class Admin_Controller extends Base_Controller {
 
         if(empty($input)) {
 
-            $token = $input['token'];
+            //$token = isset($input['token']) ? $input['token'] : '';
 
-            if(Pulsar::who($token)) {
+            if(Pulsar::check()) {
 
-                return Redirect::to('../admin/contacts')->with('token', $token);
+                return Redirect::to('../admin/contacts')->with('auth', 'true');
 
             }
 
             return Redirect::to('../admin');
 
         } else {
-            /*$input['email'] = 'maiams@msn.com';
-            $input['password'] = 'ahseeutepego1';*/
-            $token = Pulsar::login(array('username' => $input['email'], 'password' => $input['password']));
 
-            return Redirect::to('../admin/contacts')->with('token',$token);
+
+            $token = Pulsar::login(array('username' => $input['email'], 'password' => $input['password']));
+            return Redirect::to('../admin/contacts')->with('token', $token);
 
         }
 
@@ -43,21 +42,21 @@ class Admin_Controller extends Base_Controller {
 
     public function action_contacts($page=1) {
 
-        if(!Auth::check()) {
+        if(!Pulsar::check()) {
 
             return Redirect::to('../admin');
 
         }
+        $user = Pulsar::who(Input::get('token'));
         $per_page = 15;
         $messages = DB::table('contacts')->paginate($per_page, array('id', 'name','email','message','ip', 'created_at'));
 
-		return View::make('admin.contacts')->with(array('messages' => $messages,'page' => $page));
+		return View::make('admin.contacts')->with(array('messages' => $messages,'page' => $page, 'user' => $user));
 
     }
 
 	public function action_logout(){
-        $user = Input::get('email');
-		Pulsar::logout($user);
+		Pulsar::logout();
 		return Redirect::to('../admin');
 
 	}
