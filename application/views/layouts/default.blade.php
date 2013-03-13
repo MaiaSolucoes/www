@@ -1,4 +1,4 @@
-<html>
+<!DOCTYPE html>
 <head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -16,12 +16,7 @@
     {{ Asset::container('bootstrapper')->styles(); }}
     {{ Asset::styles(); }}
 
-    <!--[if IE]> <script>alert('IE sucks bro.');</script> <![endif]-->
-    <!--[if IE]>
-    <link href="bootstrap_ie6/ie6.min.css" rel="stylesheet">
-
-    <link href="css/fix_ie.css" rel="stylesheet">
-    <![endif]-->
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
     @yield('script')
 
@@ -70,10 +65,6 @@
     </div>
 </div>
 
-<script>
-    $(function(){if($.browser.msie&&parseInt($.browser.version,10)===6){$('.row div[class^="span"]:last-child').addClass("last-child");$('[class*="span"]').addClass("margin-left-20");$(':button[class="btn"], :reset[class="btn"], :submit[class="btn"], input[type="button"]').addClass("button-reset");$(":checkbox").addClass("input-checkbox");$('[class^="icon-"], [class*=" icon-"]').addClass("icon-sprite");$(".pagination li:first-child a").addClass("pagination-first-child")}})
-    $('.row div[class^="span"]:last-child').addClass('last-child');
-</script>
 {{ Asset::container('bootstrapper')->scripts(); }}
 {{ Asset::scripts(); }}
 
