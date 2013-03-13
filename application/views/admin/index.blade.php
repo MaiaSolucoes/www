@@ -31,10 +31,10 @@
             {{ Form::open(URL::to('../admin/login'), 'POST', array('class'=>'offset4 well span3')) }}
 
             {{ Form::label('email', 'Email') }}
-            {{ Form::text('email', '', array('class'=>'span3', 'style' => 'height: 30px;')) }}
+            {{ Form::text('email', '', array('class'=>'span3')) }}
 
             {{ Form::label('password', 'Password') }}
-            {{ Form::password('password',array('class'=>'span3', 'style' => 'height: 30px;')) }}
+            {{ Form::password('password',array('class'=>'span3')) }}
 
             <br /><br />
 

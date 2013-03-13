@@ -62,7 +62,7 @@
 			</div>
 		@endif
 
-		{{ Form::text('name', '', array('class'=>'span4', 'style' => 'height: 30px;')) }}
+		{{ Form::text('name', '', array('class'=>'span4')) }}
 
 		{{ Form::label('email', 'Email') }}
 
@@ -75,7 +75,7 @@
 
 	    @endif
 
-	    {{ Form::email('email', '', array('class'=>'span4 input', 'style' => 'height: 30px;')) }}
+	    {{ Form::email('email', '', array('class'=>'span4 input')) }}
 
 	    {{ Form::label('message', 'Mensagem') }}
 
