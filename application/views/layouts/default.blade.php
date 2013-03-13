@@ -12,8 +12,16 @@
 
     <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
     <link rel='shortcut icon' href='/favicon.png' />
+
     {{ Asset::container('bootstrapper')->styles(); }}
     {{ Asset::styles(); }}
+
+    <!--[if IE]> <script>alert('IE sucks bro.');</script> <![endif]-->
+    <!--[if IE]>
+    <link href="bootstrap_ie6/ie6.min.css" rel="stylesheet">
+
+    <link href="css/fix_ie.css" rel="stylesheet">
+    <![endif]-->
 
     @yield('script')
 
@@ -38,10 +46,11 @@
                             Bem vindo, {{ Auth::user()->email }} {{ HTML::link('../admin/logout','Logout') }}
                         </div>
                         @endif
+
                         @if(!Auth::check())
                             {{ Form::open(URL::to('../admin/login'), 'POST', array('class'=>'navbar-form pull-right')) }}
-                                {{ Form::text('email', '', array('class'=>'span3', 'style' => 'height: 30px;', 'placeholder="Login uhul"')) }}
-                                {{ Form::password('password',array('class'=>'span3', 'style' => 'height: 30px;', 'placeholder="Senha uhul"')) }}
+                                {{ Form::text('email', '', array('class'=>'span3', 'style' => 'height: 30px;', 'placeholder="Login"')) }}
+                                {{ Form::password('password',array('class'=>'span3', 'style' => 'height: 30px;', 'placeholder="Senha"')) }}
                                 {{ Form::submit('Entrar', array('class'=>'btn btn-inverse')) }}
                             {{ Form::close() }}
                         @endif
@@ -61,6 +70,10 @@
     </div>
 </div>
 
+<script>
+    $(function(){if($.browser.msie&&parseInt($.browser.version,10)===6){$('.row div[class^="span"]:last-child').addClass("last-child");$('[class*="span"]').addClass("margin-left-20");$(':button[class="btn"], :reset[class="btn"], :submit[class="btn"], input[type="button"]').addClass("button-reset");$(":checkbox").addClass("input-checkbox");$('[class^="icon-"], [class*=" icon-"]').addClass("icon-sprite");$(".pagination li:first-child a").addClass("pagination-first-child")}})
+    $('.row div[class^="span"]:last-child').addClass('last-child');
+</script>
 {{ Asset::container('bootstrapper')->scripts(); }}
 {{ Asset::scripts(); }}
 
