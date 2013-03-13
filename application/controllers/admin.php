@@ -20,9 +20,11 @@ class Admin_Controller extends Base_Controller {
 
         if(empty($input)) {
 
-            if(Auth::check()) {
+            $token = $input['token'];
 
-                return Redirect::to('../admin/contacts')->with('auth', 'true');
+            if(Pulsar::who($token)) {
+
+                return Redirect::to('../admin/contacts')->with('token', $token);
 
             }
 
@@ -32,15 +34,14 @@ class Admin_Controller extends Base_Controller {
             /*$input['email'] = 'maiams@msn.com';
             $input['password'] = 'ahseeutepego1';*/
             $token = Pulsar::login(array('username' => $input['email'], 'password' => $input['password']));
-            dd($token);
 
+            return Redirect::to('../admin/contacts')->with('token',$token);
 
         }
 
 	}
 
     public function action_contacts($page=1) {
-
 
         if(!Auth::check()) {
 
@@ -54,9 +55,9 @@ class Admin_Controller extends Base_Controller {
 
     }
 
-	public function action_logout() {
-
-		Auth::logout();
+	public function action_logout(){
+        $user = Input::get('email');
+		Pulsar::logout($user);
 		return Redirect::to('../admin');
 
 	}

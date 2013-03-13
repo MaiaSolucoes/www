@@ -33,8 +33,8 @@ class Pulsar {
         return $data;
     }
 
-    public static function logout(){
-        $content = self::prepare("http://pul.cicero.maiasolucoes.com.br/auth/logout");
+    public static function logout($user){
+        $content = self::prepare("http://pul.cicero.maiasolucoes.com.br/auth/logout?username=".$user);
         return $content;
     }
 
