@@ -51,19 +51,19 @@
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
+
 			<nav>
 				@include('layouts/header')
 			</nav>
         </header>
 
 
-		<section>
-			@yield('banner')
-		</section>
 
-		<section>
-			@yield('content')
-		</section>
+		@yield('banner')
+
+
+		@yield('content')
+
     </section>
 	<footer>
 		@include('layouts/footer')
