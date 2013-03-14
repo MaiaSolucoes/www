@@ -22,8 +22,8 @@
 </head>
 
 <body>
-<section id="all">
-    <section class="container" id="wrap">
+<section id="wrap">
+    <section class="container" id="main">
 
         <section class="navbar navbar-fixed-top">
             <div class="navbar-inner">
@@ -61,10 +61,8 @@
         @yield('content')
 
     </section>
-
-    @include('layouts/footer')
-
 </section>
+@include('layouts/footer')
 
 {{ Asset::container('bootstrapper')->scripts(); }}
 {{ Asset::scripts(); }}
