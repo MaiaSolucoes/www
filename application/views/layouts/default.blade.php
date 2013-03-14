@@ -62,6 +62,7 @@
 
     </section>
 </section>
+
 @include('layouts/footer')
 
 {{ Asset::container('bootstrapper')->scripts(); }}

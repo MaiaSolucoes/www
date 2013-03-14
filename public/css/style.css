@@ -5,19 +5,12 @@ body {
     margin-top: 70px;
 }
 
-a, h1, h2, h3, h4, h5, h6, p {
+body {
     font-family: 'Belgrano', serif;
 }
 
 li {
     font-size: 1.8em;
-}
-
-#all {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    display: table;
 }
 
 /*
