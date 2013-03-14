@@ -21,10 +21,10 @@
 </head>
 
 <body>
-<div id="all">
-    <div class="container">
+<section id="all">
+    <section class="container">
 
-        <div class="navbar navbar-fixed-top">
+        <header class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -51,17 +51,24 @@
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
-        </div>
+			<nav>
+				@include('layouts/header')
+			</nav>
+        </header>
 
-        @include('layouts/header')
 
-        @yield('banner')
+		<section>
+			@yield('banner')
+		</section>
 
-        @yield('content')
-
-        @include('layouts/footer')
-    </div>
-</div>
+		<section>
+			@yield('content')
+		</section>
+    </section>
+	<footer>
+		@include('layouts/footer')
+	</footer>
+</section>
 
 {{ Asset::container('bootstrapper')->scripts(); }}
 {{ Asset::scripts(); }}
