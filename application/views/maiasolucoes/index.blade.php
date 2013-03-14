@@ -14,7 +14,7 @@
 
 @section('banner')
 
-    <section class="row offset1 downset1">
+    <div class="row offset1 downset1">
 
         <div class="row">
 
@@ -33,6 +33,6 @@
 
         </div>
 
-    </section>
+    </div>
 
 @endsection

@@ -24,7 +24,7 @@
 <section id="all">
     <section class="container">
 
-        <header class="navbar navbar-fixed-top">
+        <section class="navbar navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
                     <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
@@ -35,9 +35,9 @@
                     <div class="nav-collapse collapse">
 
                         @if(Auth::check())
-                        <div class="brand">
-                            Bem vindo, {{ Auth::user()->email }} {{ HTML::link('../admin/logout','Logout') }}
-                        </div>
+                            <div class="brand">
+                                Bem vindo, {{ Auth::user()->email }} {{ HTML::link('../admin/logout','Logout') }}
+                            </div>
                         @endif
 
                         @if(!Auth::check())
@@ -51,23 +51,18 @@
                     </div><!--/.nav-collapse -->
                 </div>
             </div>
+        </section>
 
-			<nav>
-				@include('layouts/header')
-			</nav>
-        </header>
-
-
+        @include('layouts/header')
 
 		@yield('banner')
 
-
-		@yield('content')
+        @yield('content')
 
     </section>
-	<footer>
-		@include('layouts/footer')
-	</footer>
+
+    @include('layouts/footer')
+
 </section>
 
 {{ Asset::container('bootstrapper')->scripts(); }}
