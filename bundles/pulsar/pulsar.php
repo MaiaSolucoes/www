@@ -29,7 +29,7 @@ class Pulsar {
                 $data = "Error";
         }
 
-        return $data;
+        return $data->token;
     }
 
     public static function who($token){
