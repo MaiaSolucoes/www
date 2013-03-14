@@ -23,7 +23,7 @@
 
 <body>
 <section id="all">
-    <section class="container">
+    <section class="container" id="wrap">
 
         <section class="navbar navbar-fixed-top">
             <div class="navbar-inner">
