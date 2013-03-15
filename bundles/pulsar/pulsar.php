@@ -32,7 +32,9 @@ class Pulsar {
         return $data->token;
     }
 
-    public static function who($username,$token){
+    public static function who(){
+
+        //recebe o username e o token...provavelmente vai vir do metodo get_userToken
         $data = self::prepare(self::$url . "/user/user?username=$username&token=$token");
         return $data;
     }
@@ -45,6 +47,7 @@ class Pulsar {
     }
 
     public static function logout($username,$token){
+        //recebe o username e o token...provavelmente vai vir do metodo get_userToken
         $content = self::prepare(self::$url . "/auth/logout?username=$username&token=$token");
         return $content;
     }
@@ -65,7 +68,9 @@ class Pulsar {
 
         } else {
 
-            return $username,$token;
+            //aki eu preciso retornar as 2 variaveis
+            //esse codigo seria repetido em 3 metodos, essa eh a casa da sua existencia
+            //return $username,$token;
 
         }
 
