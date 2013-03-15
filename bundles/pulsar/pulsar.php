@@ -68,6 +68,7 @@ class Pulsar {
 
         } else {
 
+
             //aki eu preciso retornar as 2 variaveis
             //esse codigo seria repetido em 3 metodos, essa eh a casa da sua existencia
             //return $username,$token;
