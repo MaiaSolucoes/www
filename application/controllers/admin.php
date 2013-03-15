@@ -4,15 +4,16 @@ class Admin_Controller extends Base_Controller {
 
 	public function action_index() {
 
-        //return Pulsar::check() ? 'truee' : 'falseee';
-        if(Pulsar::check()) {
 
-            //return 'admin check ON';
+        //return Pulsar::check() ? 'truee' : 'falseee';
+        if(Pulsar::check()){
+
+            return 'admin check ON';
             return Redirect::to('../admin/contacts');
 
         }
 
-        //return 'admin check OFF';
+        return 'admin check OFF';
 		return View::make('admin.index');
 
 	}
@@ -27,12 +28,12 @@ class Admin_Controller extends Base_Controller {
 
             if(Pulsar::check()) {
 
-                //return 'admin check ON';
+                return 'admin check ON';
                 return Redirect::to('../admin/contacts');
 
             }
 
-            //return 'admin check OFF';
+            return 'admin check OFF';
             return Redirect::to('../admin');
 
         } else {
@@ -41,8 +42,8 @@ class Admin_Controller extends Base_Controller {
             $token = Pulsar::login(array('username' => $input['email'], 'password' => $input['password']));
             return 'toekn='.$token;
             //return Pulsar::check() ? 'truee' : 'falseee';
-            //return 'admin check ON';
-            //return Redirect::to('../admin/contacts');
+            return 'admin check ON';
+            //return Redirect::to('../admin/contacts')->with(array('username' => $username, 'token' => $token));
 
         }
 
@@ -52,11 +53,11 @@ class Admin_Controller extends Base_Controller {
 
         if(!Pulsar::check()) {
 
-            //return 'admin check OFF';
+            return 'admin check OFF';
             return Redirect::to('../admin');
 
         }
-        $user = Pulsar::who(Input::get('token'));
+        $user = Pulsar::who();
         $per_page = 15;
         $messages = DB::table('contacts')->paginate($per_page, array('id', 'name','email','message','ip', 'created_at'));
 

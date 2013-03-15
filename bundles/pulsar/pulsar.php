@@ -32,18 +32,20 @@ class Pulsar {
         return $data->token;
     }
 
-    public static function who($token){
-        $data = self::prepare(self::$url . "/user/user?token=$token");
+    public static function who($username,$token){
+        $data = self::prepare(self::$url . "/user/user?username=$username&token=$token");
         return $data;
     }
 
     public static function check() {
-        $data = self::prepare(self::$url . "/auth/check");
+
+        //recebe o username e o token...provavelmente vai vir do metodo get_userToken
+        $data = self::prepare(self::$url . "/auth/check?username=$username&token=$token");
         return $data;
     }
 
-    public static function logout(){
-        $content = self::prepare(self::$url . "/auth/logout");
+    public static function logout($username,$token){
+        $content = self::prepare(self::$url . "/auth/logout?username=$username&token=$token");
         return $content;
     }
 
@@ -51,5 +53,21 @@ class Pulsar {
         // RETURN HTTP STATUS CODE
         $headers = get_headers($url);
         return substr($headers[0], 9, 3);
+    }
+
+    public static function get_userToken(){
+        Session::get('username') != null ? $username = Session::get('username') : $username = null ;
+        Session::get('token') != null ? $token = Session::get('token') : $token = null ;
+
+        if($username == null or $token == null){
+
+            return false;
+
+        } else {
+
+            return $username,$token;
+
+        }
+
     }
 }
