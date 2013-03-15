@@ -14,17 +14,7 @@
 
 @section('banner')
 
-    @section('logout')
-
-        {{ HTML::link('../admin/logout','Logout') }}
-
-    @endsection
-
-    <br><br><br><br>
-
-    <center>
-        <h3>Olá, {{ Auth::User()->email }}</h3>
-    </center>
+  <br><br><br><br>
 
     <div class="container">
 
