@@ -4,7 +4,7 @@ class Pulsar {
 
     public static $token;
     // DEFAULT URL PULSAR
-    public static $url = "http://pul.raphael.maiasolucoes.com.br";
+    public static $url = "http://pul.cicero.maiasolucoes.com.br";
 
     public static function prepare($url) {
         $content = file_get_contents($url);
@@ -29,7 +29,9 @@ class Pulsar {
                 $data = "Error";
         }
 
-        return $data->token;
+
+        return $data->$arguments['username'];
+
     }
 
     public static function who() {
@@ -45,13 +47,21 @@ class Pulsar {
 
     public static function check() {
 
-        //recebe o username e o token...provavelmente vai vir do metodo get_userToken
+        $result = self::get_user_token();
+        if(!is_array($result)) {
+            return false;
+        }
+        list($username, $token) = $result;
         $data = self::prepare(self::$url . "/auth/check?username=$username&token=$token");
-        return $data;
+        return 'data='.$data;
     }
 
-    public static function logout($username,$token) {
-        //recebe o username e o token...provavelmente vai vir do metodo get_userToken
+    public static function logout() {
+        $result = self::get_user_token();
+        if(!is_array($result)) {
+            return "Not found";
+        }
+        list($username, $token) = $result;
         $content = self::prepare(self::$url . "/auth/logout?username=$username&token=$token");
         return $content;
     }
