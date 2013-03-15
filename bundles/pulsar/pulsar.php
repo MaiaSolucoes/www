@@ -4,7 +4,7 @@ class Pulsar {
 
     public static $token;
     // DEFAULT URL PULSAR
-    public static $url = "http://pul.cicero.maiasolucoes.com.br";
+    public static $url = "http://pul.raphael.maiasolucoes.com.br";
 
     public static function prepare($url) {
         $content = file_get_contents($url);

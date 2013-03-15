@@ -4,7 +4,6 @@ class Admin_Controller extends Base_Controller {
 
 	public function action_index() {
 
-
         //return Pulsar::check() ? 'truee' : 'falseee';
         if(Pulsar::check()){
 
@@ -40,7 +39,8 @@ class Admin_Controller extends Base_Controller {
 
 
             $token = Pulsar::login(array('username' => $input['email'], 'password' => $input['password']));
-            return 'toekn='.$token;
+            $user = Pulsar::who($token);
+            return Redirect::to('../admin/contacts/')->with('token', $token, 'user', $user);
             //return Pulsar::check() ? 'truee' : 'falseee';
             return 'admin check ON';
             //return Redirect::to('../admin/contacts')->with(array('username' => $username, 'token' => $token));
