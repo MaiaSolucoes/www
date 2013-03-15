@@ -15,7 +15,7 @@ class Pulsar {
         if (empty($arguments['username']) or empty($arguments['password'])){
             return "Empty Fields";
         }
-        $url = self::$url . "/auth/login?username=$arguments[username]&password=$arguments[password]";
+        $url = self::$url . "/auth/login?username=" . $arguments['username'] . "&password=" . $arguments['password'];
         $status = self::status($url);
         switch($status){
             case "200":
@@ -34,7 +34,11 @@ class Pulsar {
 
     public static function who() {
 
-        //recebe o username e o token...provavelmente vai vir do metodo get_userToken
+		$result = self::get_user_token();
+		if(!is_array($result)) {
+			return "Not found";
+		}
+        list($username, $token) = $result;
         $data = self::prepare(self::$url . "/user/user?username=$username&token=$token");
         return $data;
     }
