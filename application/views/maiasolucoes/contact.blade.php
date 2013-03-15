@@ -13,12 +13,12 @@
 @endsection
 
 @section('script')
-<script type="text/javascript">
-    $(function () {
-        $('.alert').alert('close');
-    });
+	<script type="text/javascript">
+	    $(function () {
+	        $('.alert').alert('close');
+	    });
 
-</script>
+	</script>
 @endsection
 
 @section('content')

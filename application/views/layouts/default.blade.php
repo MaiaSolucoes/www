@@ -43,7 +43,7 @@
 
                         @if(!Auth::check())
                             {{ Form::open(URL::to('../admin/login'), 'POST', array('class'=>'navbar-form pull-right')) }}
-                                {{ Form::text('email', '', array('class'=>'span3', 'placeholder="Login"')) }}
+                                {{ Form::text('email', '', array('class'=>'span3', 'placeholder="Email"')) }}
                                 {{ Form::password('password',array('class'=>'span3', 'placeholder="Senha"')) }}
                                 {{ Form::submit('Entrar', array('class'=>'btn btn-inverse')) }}
                             {{ Form::close() }}
