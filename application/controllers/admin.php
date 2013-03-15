@@ -39,7 +39,7 @@ class Admin_Controller extends Base_Controller {
 
 
             $token = Pulsar::login(array('username' => $input['email'], 'password' => $input['password']));
-            $user = Pulsar::who($token);
+            $user = Pulsar::who();
             return Redirect::to('../admin/contacts/')->with('token', $token, 'user', $user);
             //return Pulsar::check() ? 'truee' : 'falseee';
             return 'admin check ON';
