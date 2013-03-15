@@ -5,7 +5,7 @@ class Admin_Controller extends Base_Controller {
 	public function action_index() {
 
         //return Pulsar::check() ? 'truee' : 'falseee';
-        if(Pulsar::check()) {
+        if(Pulsar::check()->auth) {
 
             //return 'admin check ON';
             return Redirect::to('../admin/contacts');
@@ -24,9 +24,8 @@ class Admin_Controller extends Base_Controller {
         if(empty($input)) {
 
             //$token = isset($input['token']) ? $input['token'] : '';
-
-            if(Pulsar::check()) {
-
+            dd(Pulsar::check());
+            if(Pulsar::check()->auth == true or Pulsar::check() == 'true') {
                 //return 'admin check ON';
                 return Redirect::to('../admin/contacts');
 
@@ -39,7 +38,8 @@ class Admin_Controller extends Base_Controller {
 
 
             $token = Pulsar::login(array('username' => $input['email'], 'password' => $input['password']));
-            return 'toekn='.$token;
+            $user = Pulsar::who($token);
+            return Redirect::to('../admin/contacts/')->with('token', $token, 'user', $user);
             //return Pulsar::check() ? 'truee' : 'falseee';
             //return 'admin check ON';
             //return Redirect::to('../admin/contacts');
@@ -50,7 +50,7 @@ class Admin_Controller extends Base_Controller {
 
     public function action_contacts($page=1) {
 
-        if(!Pulsar::check()) {
+        if(!Pulsar::check()->auth) {
 
             //return 'admin check OFF';
             return Redirect::to('../admin');
