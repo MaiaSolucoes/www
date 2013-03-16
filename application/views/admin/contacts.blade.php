@@ -2,7 +2,7 @@
 
 @section('title')
 
-    Contatos
+Contatos
 
 @endsection
 
@@ -14,54 +14,44 @@
 
 @section('banner')
 
-    @section('logout')
+<br><br><br><br>
 
-        {{ HTML::link('../admin/logout','Logout') }}
+<div class="container">
 
-    @endsection
+    <table class="table table-hover table-font-small">
+        <th style="width: 150px">Nome</th>
+        <th style="width: 250px">Email</th>
+        <th style="width: 350px">Mensagem</th>
+        <th style="width: 100px">IP</th>
+        <th style="width: 110px">Data/Hora</th>
 
-    <br><br><br><br>
+        @forelse($messages->results as $valor)
 
-    <center>
-        <h3>Olá, </h3>
-    </center>
+        <tr>
+            <td>{{ $valor->name }}</td>
+            <td>{{ $valor->email }}</td>
+            <td>{{ wordwrap(Str::limit($valor->message, 2048), 80, "<br />\n", true) }}</td>
+            <td>{{ $valor->ip }}</td>
+            <td>{{ $valor->created_at }}</td>
+        </tr>
 
-    <div class="container">
+        @empty
 
-        <table class="table table-hover table-font-small">
-            <th style="width: 150px">Nome</th>
-            <th style="width: 250px">Email</th>
-            <th style="width: 350px">Mensagem</th>
-            <th style="width: 100px">IP</th>
-            <th style="width: 110px">Data/Hora</th>
+        <tr>
+            <td>Nenhum registro cadastrado.</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
 
-            @forelse($messages->results as $valor)
+        @endforelse
 
-                <tr>
-                    <td>{{ $valor->name }}</td>
-                    <td>{{ $valor->email }}</td>
-                    <td>{{ wordwrap(Str::limit($valor->message, 2048), 80, "<br />\n", true) }}</td>
-                    <td>{{ $valor->ip }}</td>
-                    <td>{{ $valor->created_at }}</td>
-                </tr>
+    </table>
 
-            @empty
+    {{ $messages->links() }}
 
-                <tr>
-                    <td>Nenhum registro cadastrado.</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
+</div>
 
-            @endforelse
-
-        </table>
-
-        {{ $messages->links() }}
-
-    </div>
-
-    <br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 
 @endsection
