@@ -83,6 +83,9 @@ class Pulsar {
 
         } else {
 
+            Cache::put('username',$username,1);
+            Cache::put('token',$token,1);
+
 			return array(
 				'username' => $username,
 				'token' => $token

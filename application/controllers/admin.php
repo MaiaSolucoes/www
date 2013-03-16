@@ -2,10 +2,6 @@
 
 class Admin_Controller extends Base_Controller {
 
-    public static $cache_token;
-
-    public static $cache_user;
-
 	public function action_index() {
 
         if(Pulsar::check()){
@@ -36,16 +32,7 @@ class Admin_Controller extends Base_Controller {
 
             $token = Pulsar::login(array('username' => $input['email'], 'password' => $input['password']));
 
-            if(!$token){
-
-                return Redirect::to('../admin');
-
-            } else {
-                self::$cache_token = $token;
-                self::$cache_user = $input['email'];
-                return Redirect::to('../admin/contacts');
-
-            }
+            return $token ? Redirect::to('../admin/contacts') : Redirect::to('../admin');
 
         }
 
@@ -67,6 +54,7 @@ class Admin_Controller extends Base_Controller {
     }
 
 	public function action_logout(){
+
 		Pulsar::logout();
 		return Redirect::to('../admin');
 
