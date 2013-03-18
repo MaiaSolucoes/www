@@ -1,332 +1,62 @@
-* {
-
-    margin: 0;
-
+body {
+    background-color: #FEFEFF;
+}
+.downset1 {
+    margin-top: 70px;
 }
 
-* html #all {
-	height: 100%; /* hack for IE6 (height as min-height) */
-}
-html, body {
-
-    background-color: #E4E4E4;
-	height: 100%;
-
-}
-
-#link_img {
-
-	margin-top: 20px;
-	margin-left: 11%;
-	float: left;
-
-}
-
-#all {
-
-	position: relative;
-	height: 100%;
-	width: 100%;
-	display: table;
-
-}
-
-#header {
-
-    height: 140px;
-    margin: 0 auto;
-
-}
-
-#header img {
-
-	margin: 0 auto;
-    float: left;
-
-}
-
-#menu {
-
-    margin: 90px auto;
-    float:right;
-
-}
-
-#menu ul {
-
-    padding: 0px;
-    margin: 0px;
-    float: right;
-    width: 100%;
-    list-style: none;
-
-}
-
-#menu ul li {
-
-    display: inline;
-    float: left;
-
-}
-
-#menu ul li a {
-
-    padding: 2px 15px;
+body {
     font-family: 'Belgrano', serif;
-    font-size: 22px;
-    color: #7D818C;
-    text-transform: uppercase;
-    text-decoration: none;
-
 }
 
-ul#menu li a.ativo { background-color:#F09; }
-
-#menu ul li a:hover {
-
-    color: #002a80;
-
+li {
+    font-size: 1.8em;
 }
 
-#footer {
+/*
+Sticky Footer Solution
+by Steve Hatcher
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
 
-	position: absolute;
-	bottom: 0px;
-    background-color: #E4E4E4;
-	clear: both;
-    width: 100%;
-    height: 50px;
-    border-top: 1px solid #c6c6c6;
+* {margin:0;padding:0;}
 
+/* must declare 0 margins on everything, also for main layout components use padding, not
+vertical margins (top and bottom) to add spacing, else those margins get added to total height
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
 
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+	padding-bottom: 180px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+	margin-top: -180px; /* negative value of footer height */
+	height: 180px;
+	clear:both;}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/* thank you Erik J - negate effect of float*/
 }
 
-h1, p, a {
 
-    font-family: 'Belgrano', serif;
-    color: #356682;
-    font-size: 2.3em;
-    line-height: 1.2em;
-    margin: 0 0 10px 0px;
 
-}
+/* IMPORTANT
 
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
 
-h2 {
-    font-family: 'Belgrano', serif;
-	color: #356682;
-	font-size: 2.1em;
-	line-height: 1.2em;
-	margin: 0 0 10px;
-}
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
 
-h3 {
-    font-family: 'Belgrano', serif;
-	color: #356682;
-	font-size: 1.8em;
-	line-height: 1.2em;
-	margin: 0 0 10px;
-}
-
-h4 {
-
-    font-family: 'Belgrano', serif;
-	color: #356682;
-	font-size: 1.5em;
-	line-height: 1.2em;
-	margin: 0 0 10px;
-
-}
-
-p {
-
-    color: #5f8eb4;
-    font-size: 1.375em;
-    line-height: 1.25em;
-    margin-left: 100px;
-
-}
-
-.p>p {
-
-    font-size: 1em;
-
-}
-
-.p>h1 {
-
-    margin-left: 70px;
-
-}
-
-.box1>p {
-
-    margin: 0;
-	text-align: justify;
-
-}
-
-.sentence_index {
-
-    margin-left: 70px;
-    font-size: 1.68em;
-
-}
-
-a {
-
-    float: right;
-    font-size: 1em;
-    padding: 0 5px 2px;
-
-}
-
-#content {
-
-    width: 90%;
-	padding-bottom: 60px;
-    margin: 0 auto;
-
-}
-
-#banner {
-
-    width: 880px;
-    height: 310px;
-    margin: 95px auto;
-    min-height: 400px;
-
-}
-
-#arrow {
-
-    margin: -50 -130 auto;
-    float: left;
-
-}
-
-#box {
-
-    margin-top: 100px;
-    padding-left: 50px;
-
-}
-
-.right_align {
-
-    margin-left: 560px;
-
-}
-
-.left_align {
-
-    margin-left: 150px;
-
-}
-
-.clear {
-
-    clear: both;
-
-}
-
-#contact_area {
-
-    margin: 100px auto 0px;
-    height: 450px;
-    width: 800px;
-
-}
-
-#form {
-
-    float: right;
-
-}
-
-#contact {
-
-    float: left;
-
-}
-
-.box1 {
-
-	 width: 400px;
-	 height: 250px;
-	 float: left;
-	 padding-right: 60px;
-
- }
-
-.box2 {
-
-	width: 960px;
-	height: 100%;
-	float: left;
-	padding-right: 60px;
-
-}
-
-/* Footer */
-.social {
-
-    position: absolute;
-    left: 15%;
-    margin-top: 10px;
-
-}
-
-.social ul {
-
-    float: left;
-    list-style-type: none;
-    margin: 0px;;
-
-}
-
-.social ul li {
-
-    display: inline;
-    font-family: 'Belgrano', serif;
-    color: rgb(53, 102, 130);
-
-}
-
-.copyright {
-
-    position: absolute;
-    left: 50%;
-    margin-left: -126px;
-    margin-top: 20px;
-    padding-bottom: 10px;
-    font-family: 'Belgrano', serif;
-    color: rgb(53, 102, 130);
-
-}
-
-.login {
-
-    position: absolute;
-    left: 65%;
-    font-family: 'Belgrano', serif;
-    color: rgb(53, 102, 130);
-    margin-top: 20px;
-
-}
-
-.terms {
-
-    position: absolute;
-    left: 75%;
-    margin-top: 23px;
-    font-family: 'Belgrano', serif;
-    color: rgb(53, 102, 130);
-
-}
-
-.table-font-small {
-
-	font-size: 11px;
-
-}
+*/

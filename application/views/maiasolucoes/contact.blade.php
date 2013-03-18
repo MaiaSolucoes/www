@@ -12,89 +12,88 @@
 
 @endsection
 
+@section('script')
+	<script type="text/javascript">
+	    $(function () {
+	        $('.alert').alert('close');
+	    });
+
+	</script>
+@endsection
+
 @section('content')
 
-    <div id="contact_area">
+<div class="row offset1 downset1">
+	<div class="span5">
+		<h1>Telefone:</h1>
+		<h4>(12) 3912-7779</h4>
+		<h1>Email:</h1><h4>contato@maiasolucoes.com.br</h4>
+	</div>
 
-        <div id="contact" class="offset">
+	<!--  0 erro
+	      1 sucesso-->
 
-            <h1>Telefone:</h1>
-            <h4>(12) 3912-7779</h4>
-            <h1>Email:</h1><h4>contato@maiasolucoes.com.br</h4>
+	@if (Session::get('result')==1)
 
-        </div>
+	    <div class="alert alert-error">
+	        <a class="close" data-dismiss="alert" href="#">&times;</a>
+	        <b>Erro na inser&ccedil;&atilde;o no banco de dados.</b>
+	    </div>
 
-        <div id="form">
+	@endif
 
-            <!--  0 erro
-                  1 sucesso-->
+	@if (Session::get('result')==2)
 
-            @if (Session::get('result')==1)
+	    <div class="alert alert-success">
+	        <a class="close" data-dismiss="alert" href="#">&times;</a>
+	        <b>Email enviado com sucesso.</b>
+	    </div>
 
-                <div class="alert alert-error">
-                    <a class="close" data-dismiss="alert" href="#">&times;</a>
-                    <b>Erro na inser&ccedil;&atilde;o no banco de dados.</b>
-                </div>
+	@endif
 
-            @endif
+	{{ Form::open(URL::to('/contact/process'), 'POST', array('class'=>'span4')) }}
 
-            @if (Session::get('result')==2)
+		{{ Form::label('name', 'Seu nome') }}
 
-                <div class="alert alert-success">
-                    <a class="close" data-dismiss="alert" href="#">&times;</a>
-                    <b>Email enviado com sucesso.</b>
-                </div>
+		@if ($errors->has('name'))
+			<div class="alert alert-error">
+				<a class="close" data-dismiss="alert" href="#">&times;</a>
+				<b>{{ $errors->first('name') }}</b>
+			</div>
+		@endif
 
-            @endif
+		{{ Form::text('name', '', array('class'=>'span4')) }}
 
-            {{ Form::open(URL::to('/contact/process'), 'POST', array('class'=>'span4')) }}
+		{{ Form::label('email', 'Email') }}
 
-                {{ Form::label('name', 'Seu nome') }}
+	    @if ($errors->has('email'))
 
-                @if ($errors->has('name'))
+	        <div class="alert alert-error">
+	            <a class="close" data-dismiss="alert" href="#">&times;</a>
+	            <b>{{ $errors->first('email') }}</b>
+	        </div>
 
-                    <div class="alert alert-error">
-                        <a class="close" data-dismiss="alert" href="#">&times;</a>
-                        <b>{{ $errors->first('name') }}</b>
-                    </div>
+	    @endif
 
-                @endif
+	    {{ Form::email('email', '', array('class'=>'span4 input')) }}
 
-                {{ Form::text('name', '', array('class'=>'span4', 'style' => 'height: 30px;')) }}
+	    {{ Form::label('message', 'Mensagem') }}
 
-                {{ Form::label('email', 'Email') }}
+	    @if ($errors->has('message'))
 
-                @if ($errors->has('email'))
+	        <div class="alert alert-error">
+	            <a class="close" data-dismiss="alert" href="#">&times;</a>
+	            <b>{{ $errors->first('message') }}</b>
+	        </div>
 
-                    <div class="alert alert-error">
-                        <a class="close" data-dismiss="alert" href="#">&times;</a>
-                        <b>{{ $errors->first('email') }}</b>
-                    </div>
+	    @endif
 
-                @endif
+	    {{ Form::textarea('message', '', array('class'=>'span4', 'style' => 'height: 130px;')) }}
 
-                {{ Form::email('email', '', array('class'=>'span4 input', 'style' => 'height: 30px;')) }}
+	    <br /><br />
+	    {{ Form::submit('Enviar', array('class'=>'btn btn-inverse')) }}
 
-                {{ Form::label('message', 'Mensagem') }}
-
-                @if ($errors->has('message'))
-
-                    <div class="alert alert-error">
-                        <a class="close" data-dismiss="alert" href="#">&times;</a>
-                        <b>{{ $errors->first('message') }}</b>
-                    </div>
-
-                @endif
-
-                {{ Form::textarea('message', '', array('class'=>'span4', 'style' => 'height: 130px;')) }}
-
-                <br /><br />
-                {{ Form::submit('Enviar', array('class'=>'btn btn-inverse')) }}
-
-            {{ Form::close() }}
-
-        </div>
-
-    </div>
+	{{ Form::close() }}
+</div>
 
 @endsection

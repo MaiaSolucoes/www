@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -12,36 +13,60 @@
 
     <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
     <link rel='shortcut icon' href='/favicon.png' />
+
     {{ Asset::container('bootstrapper')->styles(); }}
     {{ Asset::styles(); }}
 
-	<script type="text/javascript">
-		$(function () {
-			$('.alert').alert('close');
-		});
-
-	</script>
+    @yield('script')
 
 </head>
 
 <body>
-<div id="all">
-	<div class="navbar" id="header">
-		@include('layouts/header')
-	</div>
+<section id="wrap">
+    <section class="container" id="main">
 
-	<div id="content">
+        <section class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="nav-collapse collapse">
+
+                        @if(Auth::check())
+                            <div class="brand">
+                                Bem vindo, {{ Auth::user()->email }} {{ HTML::link('../admin/logout','Logout') }}
+                            </div>
+                        @endif
+
+                        @if(!Auth::check())
+                            {{ Form::open(URL::to('../admin/login'), 'POST', array('class'=>'navbar-form pull-right')) }}
+                                {{ Form::text('email', '', array('class'=>'span3', 'placeholder="Email"')) }}
+                                {{ Form::password('password',array('class'=>'span3', 'placeholder="Senha"')) }}
+                                {{ Form::submit('Entrar', array('class'=>'btn btn-inverse')) }}
+                            {{ Form::close() }}
+                        @endif
+
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </section>
+
+        @include('layouts/header')
 
 		@yield('banner')
 
-		@yield('content')
+        @yield('content')
 
-	</div>
-	<div id="footer">
-		@include('layouts/footer')
-	</div>
-</div>
+    </section>
+</section>
+
+@include('layouts/footer')
+
 {{ Asset::container('bootstrapper')->scripts(); }}
+{{ Asset::scripts(); }}
 
 </body>
 

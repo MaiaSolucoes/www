@@ -2,7 +2,7 @@
 
 @section('title')
 
-Contatos
+    Contatos
 
 @endsection
 
@@ -14,44 +14,54 @@ Contatos
 
 @section('banner')
 
-<br><br><br><br>
+    @section('logout')
 
-<div class="container">
+        {{ HTML::link('../admin/logout','Logout') }}
 
-    <table class="table table-hover table-font-small">
-        <th style="width: 150px">Nome</th>
-        <th style="width: 250px">Email</th>
-        <th style="width: 350px">Mensagem</th>
-        <th style="width: 100px">IP</th>
-        <th style="width: 110px">Data/Hora</th>
+    @endsection
 
-        @forelse($messages->results as $valor)
+    <br><br><br><br>
 
-        <tr>
-            <td>{{ $valor->name }}</td>
-            <td>{{ $valor->email }}</td>
-            <td>{{ wordwrap(Str::limit($valor->message, 2048), 80, "<br />\n", true) }}</td>
-            <td>{{ $valor->ip }}</td>
-            <td>{{ $valor->created_at }}</td>
-        </tr>
+    <center>
+        <h3>Olá, {{ Auth::User()->email }}</h3>
+    </center>
 
-        @empty
+    <div class="container">
 
-        <tr>
-            <td>Nenhum registro cadastrado.</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+        <table class="table table-hover table-font-small">
+            <th style="width: 150px">Nome</th>
+            <th style="width: 250px">Email</th>
+            <th style="width: 350px">Mensagem</th>
+            <th style="width: 100px">IP</th>
+            <th style="width: 110px">Data/Hora</th>
 
-        @endforelse
+            @forelse($messages->results as $valor)
 
-    </table>
+                <tr>
+                    <td>{{ $valor->name }}</td>
+                    <td>{{ $valor->email }}</td>
+                    <td>{{ wordwrap(Str::limit($valor->message, 2048), 80, "<br />\n", true) }}</td>
+                    <td>{{ $valor->ip }}</td>
+                    <td>{{ $valor->created_at }}</td>
+                </tr>
 
-    {{ $messages->links() }}
+            @empty
 
-</div>
+                <tr>
+                    <td>Nenhum registro cadastrado.</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-<br><br><br><br><br><br><br><br>
+            @endforelse
+
+        </table>
+
+        {{ $messages->links() }}
+
+    </div>
+
+    <br><br><br><br><br><br><br><br>
 
 @endsection
