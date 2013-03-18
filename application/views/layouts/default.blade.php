@@ -35,13 +35,11 @@
                     </button>
                     <div class="nav-collapse collapse">
 
-                        @if(Auth::check())
+                        @if(Pulsar::check())
                             <div class="brand">
-                                Bem vindo, {{ Auth::user()->email }} {{ HTML::link('../admin/logout','Logout') }}
+                                Bem vindo, {{ Cache::get('username') }} {{ HTML::link('../admin/logout','Logout') }}
                             </div>
-                        @endif
-
-                        @if(!Auth::check())
+                        @else
                             {{ Form::open(URL::to('../admin/login'), 'POST', array('class'=>'navbar-form pull-right')) }}
                                 {{ Form::text('email', '', array('class'=>'span3', 'placeholder="Email"')) }}
                                 {{ Form::password('password',array('class'=>'span3', 'placeholder="Senha"')) }}

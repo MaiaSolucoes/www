@@ -22,9 +22,7 @@
 
     <br><br><br><br>
 
-    <center>
-        <h3>Olá, {{ Auth::User()->email }}</h3>
-    </center>
+
 
     <div class="container">
 

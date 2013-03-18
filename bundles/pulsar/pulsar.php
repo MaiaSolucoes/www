@@ -12,11 +12,11 @@ class Pulsar {
     }
     public static function login ($arguments = array()){
         if (empty($arguments['username']) or empty($arguments['password'])){
-            return false;
+            return 'Empty Fields';
         }
         $url = self::$url . "/auth/login?username=" . $arguments['username'] . "&password=" . $arguments['password'];
         $prepare = self::prepare($url);
-        if(is_null($prepare->$arguments['username'])){
+        if(is_null($prepare) or !$prepare)  {
 
              return false;
 

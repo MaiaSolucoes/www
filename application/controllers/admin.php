@@ -31,12 +31,24 @@ class Admin_Controller extends Base_Controller {
         } else {
 
             $token = Pulsar::login(array('username' => $input['email'], 'password' => $input['password']));
-
-            return $token ? Redirect::to('../admin/contacts') : Redirect::to('../admin');
+            switch($token){
+                case false:
+                    $errors = "Usuario e/ou senha inválidos";
+                    break;
+                case 'Empty Fields':
+                    $errors = "Há campo(s) que são de preenchimento obrigatório";
+                    break;
+                default:
+                    return Redirect::to('../admin/contacts');
+                    break;
+            }
+            return Redirect::to('../admin')->with('errors', $errors);
+            //return $token ? Redirect::to('../admin/contacts') : Redirect::to('../admin')->with('errors', $token);
 
         }
 
 	}
+
 
     public function action_contacts($page=1) {
 
