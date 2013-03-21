@@ -52,7 +52,6 @@ class Admin_Controller extends Base_Controller {
 
 	}
 
-
     public function action_contacts($page=1) {
 
         if(!Pulsar::check()) {
