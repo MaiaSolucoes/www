@@ -23,7 +23,7 @@ class Pulsar {
         } else {
 
             Cache::put('username',$arguments['username'],1);
-            Cache::put('token',$prepare->$arguments['username'],1);
+            Cache::put('token',$prepare->token,1);
             return true;
 
         }
@@ -38,7 +38,7 @@ class Pulsar {
 		}
         $username = $result['username'];
         $token = $result['token'];
-        $data = self::prepare(self::$url . "/user/user?username=$username&token=$token");
+        $data = self::prepare(self::$url . "/user/user?token=$token&email=$username");
         return $data;
     }
 
