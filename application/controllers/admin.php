@@ -47,7 +47,6 @@ class Admin_Controller extends Base_Controller {
             }
 
             return Redirect::to('../admin')->with('errors', $errors);
-            //return $token ? Redirect::to('../admin/contacts') : Redirect::to('../admin')->with('errors', $token);
 
         }
 

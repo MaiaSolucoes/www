@@ -4,13 +4,17 @@ class Pulsar {
 
     // DEFAULT URL PULSAR
     public static $url = "http://pul.cicero.maiasolucoes.com.br";
+    private static $cache_timeout = 2;
 
     public static function prepare($url) {
+
         $content = file_get_contents($url);
         $json = json_decode($content);
         return $json;
+
     }
     public static function login ($arguments = array()){
+
         if (empty($arguments['username']) or empty($arguments['password'])){
             return 'Empty Fields';
         }
@@ -22,8 +26,8 @@ class Pulsar {
 
         } else {
 
-            Cache::put('username',$arguments['username'],1);
-            Cache::put('token',$prepare->token,1);
+            Cache::put('username',$arguments['username'], self::$cache_timeout);
+            Cache::put('token',$prepare->token, self::$cache_timeout);
             return true;
 
         }
@@ -34,7 +38,9 @@ class Pulsar {
 
 		$result = self::get_user_token();
 		if(!is_array($result)) {
+
 			return "Not found";
+
 		}
         $username = $result['username'];
 
@@ -47,8 +53,9 @@ class Pulsar {
         $token = $result['token'];
         $data = self::prepare(self::$url . "/user/user?token=$token&email=$username");
         $cache_user = $data->$username;
-        Cache::put($username, $cache_user[0]->display_name, 1);
+        Cache::put($username, $cache_user[0]->display_name, self::$cache_timeout);
         return $data;
+
     }
 
     public static function check() {
@@ -56,18 +63,23 @@ class Pulsar {
         $result = self::get_user_token();
         //return $result;
         if(!is_array($result)) {
+
             return false;
+
         }
         $username = $result['username'];
         $token = $result['token'];
         $data = self::prepare(self::$url . "/auth/check?username=$username&token=$token");
         return $data;
+
     }
 
     public static function logout() {
         $result = self::get_user_token();
         if(!is_array($result)) {
+
             return "Not found";
+
         }
         $username = $result['username'];
         $token = $result['token'];
@@ -76,9 +88,11 @@ class Pulsar {
     }
 
     public static function status($url) {
+
         // RETURN HTTP STATUS CODE
         $headers = get_headers($url);
         return substr($headers[0], 9, 3);
+
     }
 
     public static function get_user_token() {
@@ -92,8 +106,8 @@ class Pulsar {
 
         } else {
 
-            Cache::put('username',$username,1);
-            Cache::put('token',$token,1);
+            Cache::put('username',$username, self::$cache_timeout);
+            Cache::put('token',$token, self::$cache_timeout);
 
 			return array(
 				'username' => $username,
@@ -103,4 +117,5 @@ class Pulsar {
         }
 
     }
+
 }
