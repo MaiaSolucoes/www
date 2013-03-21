@@ -37,8 +37,16 @@ class Pulsar {
 			return "Not found";
 		}
         $username = $result['username'];
+
+        if (Cache::has($username)) {
+
+            return Cache::get($username);
+
+        }
+
         $token = $result['token'];
         $data = self::prepare(self::$url . "/user/user?token=$token&email=$username");
+        Cache::put($username, $data->results[0], 1);
         return $data;
     }
 

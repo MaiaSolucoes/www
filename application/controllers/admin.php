@@ -61,10 +61,11 @@ class Admin_Controller extends Base_Controller {
             return Redirect::to('../admin');
 
         }
+        $user = Pulsar::who();
         $per_page = 15;
         $messages = DB::table('contacts')->paginate($per_page, array('id', 'name','email','message','ip', 'created_at'));
 
-		return View::make('admin.contacts')->with(array('messages' => $messages,'page' => $page));
+		return View::make('admin.contacts')->with(array('messages' => $messages,'page' => $page, 'user' => $user));
 
     }
 
