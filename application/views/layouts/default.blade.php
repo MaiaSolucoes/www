@@ -37,7 +37,7 @@
 
                         @if(Pulsar::check())
                             <div class="brand">
-                                Bem vindo, {{ Cache::get(Cache::get('username'))->first_name }} {{ HTML::link('../admin/logout','Logout') }}
+                                Bem vindo, {{ Cache::get(Cache::get('username')) }} {{ HTML::link('../admin/logout','Logout') }}
                             </div>
                         @else
                             {{ Form::open(URL::to('../admin/login'), 'POST', array('class'=>'navbar-form pull-right')) }}

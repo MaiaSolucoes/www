@@ -46,7 +46,8 @@ class Pulsar {
 
         $token = $result['token'];
         $data = self::prepare(self::$url . "/user/user?token=$token&email=$username");
-        Cache::put($username, $data->results[0], 1);
+        $cache_user = $data->$username;
+        Cache::put($username, $cache_user[0]->display_name, 1);
         return $data;
     }
 
