@@ -39,4 +39,6 @@ return array(
 	'bootstrapper' => array('auto' => true),
 	'laravel-htmlpurifier' => array('auto' => true),
     'pulsar' => array('auto' => true),
+    'quasar' => array('auto' => true),
+
 );
