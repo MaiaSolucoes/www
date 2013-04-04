@@ -4,7 +4,7 @@
 
         public static function test () {
 
-            return "FUNCIONOU";
+            return "Its works!";
 
         }
 
