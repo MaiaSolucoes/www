@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <meta name="title" content="Maia Soluções em TI" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="description"
-		  content="Temos uma única paixão: Ajudar nossos clientes a desenvolver seu potencial. Nós fazemos isso criando soluções intuitivas e que funcionam de verdade."/>
+		  content="Maia Soluções em TI"/>
 	<meta name="keywords"
-		  content="tecnologia, internet, site, criacao de site, erp, crm, relacionamento, cliente, tecnologia, php, web, empresa, sjc, software"/>
+		  content="Maia Soluções em TI"/>
 	<meta http-equiv="Content-Language" content="pt-br"/>
 
 	<title>@yield('title')</title>

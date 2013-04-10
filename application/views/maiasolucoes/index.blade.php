@@ -2,7 +2,7 @@
 
 @section('title')
 
-    Página Inicial
+    Maia Soluções em TI
 
 @endsection
 
