@@ -55,5 +55,5 @@
 	</p>
     </div>
 </div>
-
+<script>
 @endsection

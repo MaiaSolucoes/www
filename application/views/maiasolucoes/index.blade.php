@@ -1,14 +1,36 @@
 @layout('layouts/default')
 
-@section('title')
+@section('analytics')
 
-    Maia Soluções em TI
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40087868-1', 'maiasolucoes.com.br');
+    ga('send', 'pageview');
+
+</script>
+
+@endsection
+
+@section('meta')
+
+<meta name="description" content="Ajudar Desenvolver Potencial e soluções intuitivas e que funcionam de verdade"/>
+<meta name="keywords" content="maia, soluções,TI, tecnologia, ajudar, desenvolver, potencial,intuitivas, funcionam, verdade"/>
 
 @endsection
 
 @section('link_select')
 
 <?php $link = 'main';?>
+
+@endsection
+
+@section('title')
+
+Maia Soluções em TI - Página Inicial
 
 @endsection
 
@@ -34,5 +56,5 @@
         </div>
 
     </div>
-
+    </div>
 @endsection

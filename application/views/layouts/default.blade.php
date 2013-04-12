@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="title" content="Maia Soluções em TI" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta name="description"
-		  content="Maia Soluções em TI"/>
-	<meta name="keywords"
-		  content="Maia Soluções em TI"/>
-	<meta http-equiv="Content-Language" content="pt-br"/>
 
+    @yield('analytics')
+    @yield('meta')
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+	<meta http-equiv="Content-Language" content="pt-br"/>
 	<title>@yield('title')</title>
 
     <link href='http://fonts.googleapis.com/css?family=Belgrano' rel='stylesheet' type='text/css'>
@@ -16,8 +14,6 @@
 
     {{ Asset::container('bootstrapper')->styles(); }}
     {{ Asset::styles(); }}
-
-    @yield('script')
 
 </head>
 

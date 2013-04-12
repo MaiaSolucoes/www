@@ -1,8 +1,36 @@
 @layout('layouts/default')
 
+@section('analytics')
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40087868-1', 'maiasolucoes.com.br');
+    ga('send', 'pageview');
+
+</script>
+
+@endsection
+
+@section('meta')
+
+<meta name="description" content="ELABORAR TEXTO COM DESCRICAO DA PAGINA"/>
+<meta name="keywords" content="DEFINIR PALAVRAS CHAVES"/>
+
+@endsection
+
 @section('title')
 
-Solu&ccedil;&otilde;es
+Maia Soluções em TI - Soluções em TI
+
+@endsection
+
+@section('link_select')
+
+<?php $link = 'main';?>
 
 @endsection
 
@@ -65,5 +93,4 @@ Solu&ccedil;&otilde;es
     </div>
 
 </div>
-
 @endsection
