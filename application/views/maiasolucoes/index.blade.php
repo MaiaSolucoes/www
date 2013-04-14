@@ -16,7 +16,7 @@
 @endsection
 
 @section('meta')
-
+<meta name="google-site-verification" content="-jdv5nYhJIa7owgQgGffC4HXt7d9UIr8cuCrmTHjnD4" />
 <meta name="description" content="Ajudar Desenvolver Potencial e soluções intuitivas e que funcionam de verdade"/>
 <meta name="keywords" content="maia, soluções,TI, tecnologia, ajudar, desenvolver, potencial,intuitivas, funcionam, verdade"/>
 
