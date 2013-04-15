@@ -17,8 +17,8 @@
 
 @section('meta')
 <meta name="google-site-verification" content="-jdv5nYhJIa7owgQgGffC4HXt7d9UIr8cuCrmTHjnD4" />
-<meta name="description" content="Ajudar Desenvolver Potencial e soluções intuitivas e que funcionam de verdade"/>
-<meta name="keywords" content="maia, soluções,TI, tecnologia, ajudar, desenvolver, potencial,intuitivas, funcionam, verdade"/>
+<meta name="description" content="A empresa Maia Soluções tem uma única paixão: Ajudar nossos clientes a desenvolver seu potencial e nós fazemos isso criando soluções intuitivas e que funcionam de verdade"/>
+<meta name="keywords" content="maia, soluções,solucoes,solucao,solução,TI, tecnologia,informação, ajudar, desenvolver, potencial,intuitivas, funcionam, verdade"/>
 
 @endsection
 
