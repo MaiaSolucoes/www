@@ -1,8 +1,49 @@
 @layout('layouts/default')
 
+@section('analytics')
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-40076393-1', 'maiasolucoes.com.br');
+    ga('send', 'pageview');
+
+</script>
+
+@endsection
+
+@section('meta')
+
+<meta name="google-site-verification" content="-jdv5nYhJIa7owgQgGffC4HXt7d9UIr8cuCrmTHjnD4" />
+<meta name="description" content="
+Maia Soluções em TI: Somos uma pequena empresa e desenvolvemos soluções para os pequenos como nós. Nós sabemos o quanto
+somos importantes para a economia do país e também sabemos que os grandes softwares de gestão são muito
+caros.
+Pensando nisso, criamos ferramentas simples, diretas e com uma linguagem próxima do cliente ao invés de
+telas complicadas e cheias de informações desnecessárias. Acreditamos que a tecnologia está a serviço
+das pessoas e dos negócios.
+Desenvolvemos soluções inteligentes, maximizando valor para nossos clientes.
+Estamos envolvidos em transformar a TI (Tecnologia da Informação) em TN (Tecnologia dos Negócios).
+"/>
+<meta name="keywords" content="maia, soluções,solucoes,solucao,solução,TI, tecnologia,informação, "/>
+
+
+
+
+@endsection
+
+@section('link_select')
+
+    <?php $link = 'about';?>
+
+@endsection
+
 @section('title')
 
-    Sobre Nós
+    Maia Soluções em TI - Sobre Nós
 
 @endsection
 
