@@ -19,16 +19,9 @@
 
     <meta name="google-site-verification" content="-jdv5nYhJIa7owgQgGffC4HXt7d9UIr8cuCrmTHjnD4" />
     <meta name="description" content="
-    Maia Soluções em TI: Somos uma pequena empresa e desenvolvemos soluções para os pequenos como nós. Nós sabemos o quanto
-    somos importantes para a economia do país e também sabemos que os grandes softwares de gestão são muito
-    caros.
-    Pensando nisso, criamos ferramentas simples, diretas e com uma linguagem próxima do cliente ao invés de
-    telas complicadas e cheias de informações desnecessárias. Acreditamos que a tecnologia está a serviço
-    das pessoas e dos negócios.
-    Desenvolvemos soluções inteligentes, maximizando valor para nossos clientes.
-    Estamos envolvidos em transformar a TI (Tecnologia da Informação) em TN (Tecnologia dos Negócios).
-    "/>
-    <meta name="keywords" content="maia, soluções,solucoes,solucao,solução,TI, tecnologia,informação, negocio"/>
+    Sabemos como são caros os softwares de gestão, então desenvolvemos soluções inteligentes para pequenos como nós.
+    Transformando a TI (Tecnologia da Informação) em TN (Tecnologia dos Negócios)"/>
+    <meta name="keywords" content="maia, soluções,solucoes,solucao,solução,TI, tecnologia,informação, negocio,caro, barato,preço baixo,inovação, qualidade, software"/>
 
 @endsection
 
@@ -40,7 +33,7 @@
 
 @section('title')
 
-    Maia Soluções em TI - Sobre Nós
+    Maia Soluções em TI - Qualidade de software, preço baixo e inovação
 
 @endsection
 

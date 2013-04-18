@@ -19,17 +19,8 @@
 
     <meta name="google-site-verification" content="-jdv5nYhJIa7owgQgGffC4HXt7d9UIr8cuCrmTHjnD4" />
     <meta name="description" content="A empresa Maia Soluções tem uma única paixão: Ajudar nossos clientes a desenvolver seu potencial e nós fazemos isso criando soluções intuitivas e que funcionam de verdade"/>
-    <meta name="keywords" content="maia, soluções,solucoes,solucao,solução,TI, tecnologia,informação, ajudar, desenvolver, potencial,intuitivas, funcionam, verdade"/>
+    <meta name="keywords" content="maia, soluções,solucoes,solucao,solução,TI, tecnologia,informação, ajudar, desenvolver, potencial,intuitivas, funcionam, verdade,qualidade, software"/>
     <meta name="robots" content="index, follow">
-    {{
-    <!--begin meta facebook-->
-    <meta property="og:title" content="Maia Soluções em TI - Página Inicial"/>
-    <meta property="og:url" content="http://www.maiasolucoes.com.br/"/>
-    <meta property="og:image" content="https://contaazul.com/img/fb_thumb3.jpg"/>
-    <meta property="og:site_name" content="ContaAzul"/>
-    <meta property="og:description" content="O ContaAzul é o melhor sistema de gestão para micro e pequenas empresas. Com o ContaAzul você controla o estoque, vendas e fluxo de caixa e ainda emite NF-e e NFS-e."/>
-    <!--end meta facebook-->
-    }}
 
 @endsection
 
@@ -41,7 +32,7 @@
 
 @section('title')
 
-    Maia Soluções em TI - Página Inicial
+    Maia Soluções em TI - Controle o seu négocio
 
 @endsection
 

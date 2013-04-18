@@ -17,26 +17,21 @@
 
 @section('meta')
 
-<meta name="description" content="ELABORAR TEXTO COM DESCRICAO DA PAGINA"/>
-<meta name="keywords" content="DEFINIR PALAVRAS CHAVES"/>
+    <meta name="description" content="Crie campanhas de marketing personalizadas de acordo com o perfil dos seus clientes e acompanhe os resultados em tempo
+                real. Tudo com preço baixo"/>
+    <meta name="keywords" content="preço, baixo, tempo, real, personalizar, personalizada, acompanhe, controle, negócio, casa, celular"/>
 
 @endsection
 
 @section('title')
 
-Maia Soluções em TI - Soluções em TI
+    Maia Soluções em TI - Controle do seu negócio, seja no trabalho, em casa ou no seu celular
 
 @endsection
 
 @section('link_select')
 
-<?php $link = 'main';?>
-
-@endsection
-
-@section('link_select')
-
-<?php $link = 'solutions';?>
+    <?php $link = 'solutions';?>
 
 @endsection
 
