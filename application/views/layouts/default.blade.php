@@ -18,6 +18,8 @@
 </head>
 
 <body>
+@yield('facebook')
+@yield('gtmanager')
 <section id="wrap">
     <section class="container" id="main">
 
