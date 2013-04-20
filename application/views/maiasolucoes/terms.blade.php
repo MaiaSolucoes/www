@@ -18,6 +18,7 @@
 @section('meta')
 
     <meta name="google-site-verification" content="-jdv5nYhJIa7owgQgGffC4HXt7d9UIr8cuCrmTHjnD4" />
+    <meta name="msvalidate.01" content="48F5AC008B09E4F47425420073582C18" />
     <meta name="description" content="Conheça os termos de serviço da Maia Soluções de uma forma clara e simples"/>
     <meta name="keywords" content="termos serviço, maia soluções, maia soluções em ti, forma clara, forma simples"/>
 
