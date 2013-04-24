@@ -56,7 +56,7 @@
 
 	<div class="p box2">
         <h1 class="hidden">Como funciona os nossos serviços</h1>
-		<h1>Termos de Servi&ccedil;os</h1>
+		<h2>Termos de Servi&ccedil;os</h2>
 
 		<p class="clear">
 			Termos do Site
