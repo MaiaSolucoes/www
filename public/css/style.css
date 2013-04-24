@@ -47,7 +47,9 @@ body:before {/* thanks to Maleika (Kohoutec)*/
 	margin-top:-32767px;/* thank you Erik J - negate effect of float*/
 }
 
-
+.hidden {
+    display: none;
+}
 
 /* IMPORTANT
 

@@ -19,7 +19,7 @@
 
     <meta name="google-site-verification" content="-jdv5nYhJIa7owgQgGffC4HXt7d9UIr8cuCrmTHjnD4" />
     <meta name="msvalidate.01" content="48F5AC008B09E4F47425420073582C18" />
-    <meta name="description" content="Entre em contato com a Maia Soluções para obter mais informações sobre os nossos serviços e tire suas dúvidas. Estamos à disposição para atendê-lo(a)"/>
+    <meta name="description" content="Entre em contato com a Maia Soluções para obter mais informações e tirar suas dúvidas sobre os nossos serviços. Estamos à disposição para atendê-lo(a)."/>
     <meta name="keywords" content=" maia soluções, maia soluções em ti, contato software, contato negocio, contato serviço, contato barato,contato qualidade"/>
 
 @endsection
@@ -78,9 +78,10 @@
 
 <div class="row offset1 downset1">
 	<div class="span5">
-		<h1>Telefone:</h1>
+        <h1 class="hidden">Contato para negociar uma solução</h1>
+		<h2>Telefone:</h2>
 		<h4>(12) 3912-7779</h4>
-		<h1>Email:</h1><h4>contato@maiasolucoes.com.br</h4>
+		<h2>Email:</h2><h4>contato@maiasolucoes.com.br</h4>
         <br />
         <div style="float: left;" class="fb-like-box" data-href="http://www.facebook.com/pages/Maia-Solu%C3%A7%C3%B5es-em-TI/448484765235098?ref=ts&amp;fref=ts" data-width="290" data-show-faces="true" data-stream="false" data-border-color="#999999" data-header="false"></div>
 	</div>

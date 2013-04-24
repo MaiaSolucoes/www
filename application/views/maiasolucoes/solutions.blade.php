@@ -19,7 +19,7 @@
 
     <meta name="google-site-verification" content="-jdv5nYhJIa7owgQgGffC4HXt7d9UIr8cuCrmTHjnD4" />
     <meta name="msvalidate.01" content="48F5AC008B09E4F47425420073582C18" />
-    <meta name="description" content="Crie campanhas de marketing personalizadas de acordo com o perfil dos seus clientes e acompanhe os resultados em tempo real. Tudo com preço baixo"/>
+    <meta name="description" content="Crie campanhas de marketing personalizadas de acordo com o perfil cada um dos seus clientes e acompanhe os resultados em tempo real. Tudo com preço baixo"/>
     <meta name="keywords" content=" maia soluções, maia soluções em ti, preço baixo, tempo real, personalizar, personalizada, acompanhe, controle, negócio, controle de casa, controle do celular"/>
 
 @endsection
@@ -56,6 +56,7 @@
 
     <div class="row">
         <div class="span5">
+            <h1 class="hidden">Controle do seu próprio negócio</h1>
             <h4>Seu negócio no caminho certo</h4>
             <p>
                 Nós trabalhamos duro para entregar a você as ferramentas necessárias para tornar a sua empresa mais

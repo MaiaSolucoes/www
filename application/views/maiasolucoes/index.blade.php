@@ -19,7 +19,7 @@
 
     <meta name="google-site-verification" content="-jdv5nYhJIa7owgQgGffC4HXt7d9UIr8cuCrmTHjnD4" />
     <meta name="msvalidate.01" content="48F5AC008B09E4F47425420073582C18" />
-    <meta name="description" content="A empresa Maia Soluções tem uma única paixão: Ajudar nossos clientes a desenvolver seu potencial e nós fazemos isso criando soluções intuitivas e que funcionam de verdade"/>
+    <meta name="description" content="A Maia Soluções tem uma única paixão: Ajudar as pequenas empresas a desenvolverem o seu potencial. Criando soluções intuitivas que funcionam de verdade."/>
     <meta name="keywords" content="maia soluções,maia soluções em TI, tecnologia da informação, ajudar, desenvolver seu potencial,intuitivas, negocio bom,negocio que funcionam, verdade,qualidade, software,criar proprio negocio"/>
     <meta name="robots" content="index, follow">
 
@@ -59,11 +59,12 @@
 
             <div class="span9">
 
+                <h1 class="hidden">Controle seu próprio négocio</h1>
                 <h2>Temos uma única paixão:</h2>
                 <h2>Ajudar nossos clientes a desenvolver seu potencial</h2>
                 <br />
                 <div class="span1">
-                    <img src="img/arrow.png">
+                    <img alt="paixão" src="img/arrow.png">
                 </div>
                 <h4 class="offset1">Nós fazemos isso criando soluções intuitivas e que funcionam de verdade.</h4>
                 <a href="solutions" class="offset5">Saiba Mais »</a>
