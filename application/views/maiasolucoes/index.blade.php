@@ -20,7 +20,7 @@
     <meta name="google-site-verification" content="-jdv5nYhJIa7owgQgGffC4HXt7d9UIr8cuCrmTHjnD4" />
     <meta name="msvalidate.01" content="48F5AC008B09E4F47425420073582C18" />
     <meta name="description" content="A Maia Soluções tem uma única paixão: Ajudar as pequenas empresas a desenvolverem o seu potencial. Criando soluções intuitivas que funcionam de verdade."/>
-    <meta name="keywords" content="maia soluções,maia soluções em TI, tecnologia da informação, ajudar, desenvolver seu potencial,intuitivas, negocio bom,negocio que funcionam, verdade,qualidade, software,criar proprio negocio"/>
+    <meta name="keywords" content="maia soluções, solucoes em ti,maia soluções em TI, tecnologia da informação, ajudar, desenvolver seu potencial,intuitivas, negocio bom,negocio que funcionam, verdade,qualidade, software,criar proprio negocio"/>
     <meta name="robots" content="index, follow">
 
 @endsection

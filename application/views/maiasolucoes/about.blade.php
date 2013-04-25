@@ -20,7 +20,7 @@
     <meta name="google-site-verification" content="-jdv5nYhJIa7owgQgGffC4HXt7d9UIr8cuCrmTHjnD4" />
     <meta name="msvalidate.01" content="48F5AC008B09E4F47425420073582C18" />
     <meta name="description" content="Como os softwares de gestão estão muito caro, desenvolvemos soluções inteligentes para pequenos como nós. Transformando a Tecnologia da Informação em Negócios"/>
-    <meta name="keywords" content=" maia soluções, maia soluções em ti, tecnologia informação,tecnologia negocio, barato,preço baixo,inovação, qualidade software"/>
+    <meta name="keywords" content=" maia soluções, solucoes em ti, maia soluções em ti, tecnologia informação,tecnologia negocio, barato,preço baixo,inovação, qualidade software"/>
 
 @endsection
 
