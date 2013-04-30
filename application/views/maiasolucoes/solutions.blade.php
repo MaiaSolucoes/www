@@ -32,7 +32,7 @@
 
 @section('title')
 
-    Maia Soluções em TI - Controle do seu negócio, seja no trabalho, em casa ou no seu celular
+    Maia Soluções em TI - Controle do seu negócio, em casa ou no seu celular
 
 @endsection
 
@@ -104,4 +104,5 @@
     </div>
 
 </div>
+
 @endsection
