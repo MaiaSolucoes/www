@@ -67,6 +67,17 @@ class Admin_Controller extends Base_Controller {
 
     }
 
+    public function action_services() {
+
+        if(!Pulsar::check()) {
+
+            return Redirect::to('../admin');
+
+        }
+        return View::make('admin.services');
+
+    }
+
 	public function action_logout(){
 
 		Pulsar::logout();
