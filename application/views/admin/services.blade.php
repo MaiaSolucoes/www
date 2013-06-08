@@ -2,7 +2,7 @@
 
 @section('title')
 
-Administração - Servidores
+    Administração - Servidores
 
 @endsection
 
@@ -14,6 +14,6 @@ Administração - Servidores
 
 @section('content')
 
-<h1 class="offset4">Servidores</h1>
+    <h1 class="offset4">Servidores</h1>
 
 @endsection
