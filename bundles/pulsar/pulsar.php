@@ -3,7 +3,7 @@
 class Pulsar {
 
     // DEFAULT URL PULSAR
-    public static $url = "http://pul.cicero.maiasolucoes.com.br";
+    public static $url = "http://pulsar.harmonycloud.com.br";
     private static $cache_timeout = 2;
 
     public static function prepare($url) {
